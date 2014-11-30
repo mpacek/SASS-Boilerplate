@@ -1,4 +1,4 @@
-# Template
+# Framework v1.0.0
 
 ## Installation
 
@@ -6,7 +6,7 @@
 
 ## Getting started
 
-Sass files structure:
+**Sass files structure:**
 
 	Sass/
 		base/
@@ -14,11 +14,17 @@ Sass files structure:
 		components/
 		modules/
 		_defaults.scss
-		_base.scss
+		_framework.scss
 
-* base/ - low-level styling, things like a reset, normalize, print styles, layout, grid
+* base/ - low-level styling, things like a reset, normalize, print styles, layout
 * helpers/ - all tools and helpers used across the project
-* components/ - it can contain all kinds of specific modules like slider, loader, widgets
+* components/ - it can contain styles for all kinds of specific elements like headings, lists, images
 * modules/ - contains all modules
+* defaults - default configuration, colors, sizes, etc.
+* framework - base sass file
 
-## Browser support
+## License
+
+Copyright 2014 Michał Pacek
+
+Licensed under the Apache License, Version 2.0.
