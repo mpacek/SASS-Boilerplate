@@ -1,4 +1,5 @@
-# Template
+Template
+=========
 
 ## Getting started
 
@@ -22,20 +23,3 @@ modules/ - contains all modules
 Sass 3.2
 
 ## Browser support
-
-### Css
-
-Coments:
-
-// ---------------------------------------
-// Section comment block
-// ---------------------------------------
- 
-// Group comment block.
-// Ideal for multi-line 
-// explanations and documentation.
- 
-// Sub-section comment block
-// ---------------------------------------
- 
-// Basic comment
