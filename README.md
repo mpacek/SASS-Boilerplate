@@ -4,9 +4,9 @@ Sass based, Object Oriented framework.
 
 **Inspired by:**
 
-[github.com/inuitcss](https://github.com/inuitcss)
-[getbootstrap.com](http://getbootstrap.com/)
-[purecss.io](http://purecss.io/)
+* [github.com/inuitcss](https://github.com/inuitcss)
+* [getbootstrap.com](http://getbootstrap.com/)
+* [purecss.io](http://purecss.io/)
 
 ## Installation
 
