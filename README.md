@@ -1,6 +1,6 @@
 # Framework v1.0.0
 
-Sass based, Object Oriented framework. 
+Sass based, Object Oriented CSS framework. 
 
 **Inspired by:**
 
