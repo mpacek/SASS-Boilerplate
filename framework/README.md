@@ -9,17 +9,17 @@
 **Sass files structure:**
 
 	Sass/
-		base/
 		helpers/
+		base/
 		components/
 		modules/
 		_defaults.scss
 		_framework.scss
 
-* base/ - low-level styling, things like a reset, normalize, print styles, layout
 * helpers/ - all tools and helpers used across the project
-* components/ - it can contain styles for all kinds of specific elements like headings, lists, images
-* modules/ - contains all modules
+* base/ - low-level styling, things like a reset, normalize, print styles, layout
+* components/ - it can contain styles for basic elements like headings, lists, tables, images
+* modules/ - contains styles for elements like navigation, buttons, grid structure
 * defaults - default configuration, colors, sizes, etc.
 * framework - base sass file
 
