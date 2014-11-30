@@ -1,5 +1,6 @@
+@if $use-wp-styles == true{
 // ---------------------------------------
-// Wordpress
+// Wordpress default styles
 // ---------------------------------------
 
 // Images align
@@ -27,3 +28,5 @@
 .wp-caption-text {
 	font-style:italic;
 }
+
+} //endif
