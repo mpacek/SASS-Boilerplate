@@ -1,4 +1,5 @@
-# Template
+Template
+=========
 
 ## Getting started
 
