@@ -8,9 +8,9 @@ Sass based, Object Oriented framework.
 * [getbootstrap.com](http://getbootstrap.com/)
 * [purecss.io](http://purecss.io/)
 
-## Installation
+## Requirements
 
-**Requires Sass 3.3**
+**Sass 3.3**
 
 ## Getting started
 
