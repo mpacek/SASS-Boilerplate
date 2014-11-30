@@ -1,5 +1,13 @@
 # Framework v1.0.0
 
+Sass based, Object Oriented framework. 
+
+**Inspired by:**
+
+[github.com/inuitcss](https://github.com/inuitcss)
+[getbootstrap.com](http://getbootstrap.com/)
+[purecss.io](http://purecss.io/)
+
 ## Installation
 
 **Requires Sass 3.3**
