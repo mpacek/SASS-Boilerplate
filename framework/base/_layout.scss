@@ -1,0 +1,21 @@
+// ---------------------------------------
+// Layout
+// ---------------------------------------
+
+// Box sizing
+*[class^="l-"] {
+	@include box-sizing(border-box);
+}
+
+// Container
+.l-container {
+	width:$desk-start + $layout-gutter; margin-left:auto; margin-right:auto; padding:0 $half-layout-gutter;
+	@extend .cf;
+	
+	@include media-query(table){ 
+		width:100%;
+	}
+}
+.l-container--fluid {
+	margin:0 auto; padding:0 $half-layout-gutter;
+}

@@ -1,0 +1,36 @@
+// ---------------------------------------
+// Images
+// ---------------------------------------
+
+// Image size  
+img {
+	max-width:100%;
+	font-style:italic;
+	&[width],
+	&[height]{
+		max-width:none;
+	}
+}
+
+// Image placement
+.img--right {
+	margin-left:$base-spacing-unit;
+	margin-bottom:$base-spacing-unit / 2;
+	float:right;
+}
+.img--left {
+	margin-right:$base-spacing-unit;
+	margin-bottom:$base-spacing-unit / 2;
+	float:left;
+}
+.img--center {
+	margin-right:auto;
+	margin-left:auto;
+	margin-bottom:$base-spacing-unit;
+	display:block;
+}
+
+// Figure
+figure > img {
+	display:block;
+}

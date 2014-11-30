@@ -1,0 +1,26 @@
+// ---------------------------------------
+// Shared
+// ---------------------------------------
+
+// Base elements
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dl,
+blockquote,p,address,
+table,
+fieldset,figure,
+pre {
+	margin-bottom:$base-spacing-unit;
+	margin-bottom:($base-spacing-unit / $base-font-size)*1rem;
+}
+
+// hr bottom margin
+hr {
+	margin-bottom:$base-spacing-unit - 2px;
+	margin-bottom:(($base-spacing-unit - 2px) / $base-font-size)*1rem;
+}
+
+// lists left margin
+ul,ol {
+	margin-left:2 * $base-spacing-unit;
+	margin-left:(2 * $base-spacing-unit / $base-font-size)*1rem;
+}

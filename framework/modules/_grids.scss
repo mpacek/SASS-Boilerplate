@@ -1,0 +1,19 @@
+@if $use-grids == true{
+// ---------------------------------------
+// Grids
+// ---------------------------------------
+
+.l-row {
+	margin-left:- $half-layout-gutter; margin-right:- $half-layout-gutter;
+}
+*[class^=".l-col"] {
+	padding:0 $half-layout-gutter;
+	position:relative;
+	float:left;
+}
+@include grid-setup();
+@include media-query(phone)			{ @include grid-setup("-xs"); }
+@include media-query(smartphone)		{ @include grid-setup("-s"); }
+@include media-query(table)			{ @include grid-setup("-m"); }
+
+} //endif

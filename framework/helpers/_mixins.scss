@@ -1,0 +1,155 @@
+// ---------------------------------------
+// Mixins
+// ---------------------------------------
+
+   
+// Text
+// ---------------------------------------
+
+// Font-size
+@mixin font-size($font-size, $line-height:true) {
+	font-size:$font-size;
+	font-size:($font-size / $base-font-size)*1rem;
+	@if $line-height == true{
+		line-height:ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+	}
+}
+
+
+// Layout
+// ---------------------------------------
+
+// 12 columns Grid
+@mixin grid-setup($namespace: "") {
+	.l-col#{$namespace}-12 	{ width: 100%; }
+	.l-col#{$namespace}-11 	{ width: 91.66666667%; }
+	.l-col#{$namespace}-10 	{ width: 83.33333333%; }
+	.l-col#{$namespace}-9 	{ width: 75%; }
+	.l-col#{$namespace}-8 	{ width: 66.66666667%; }
+	.l-col#{$namespace}-7 	{ width: 58.33333333%; }
+	.l-col#{$namespace}-6 	{ width: 50%; }
+	.l-col#{$namespace}-5 	{ width: 41.66666667%; }
+	.l-col#{$namespace}-4 	{ width: 33.33333333%; }
+	.l-col#{$namespace}-3 	{ width: 25%; }
+	.l-col#{$namespace}-2 	{ width: 16.66666667%; }
+	.l-col#{$namespace}-1 	{ width: 8.33333333%; }
+}
+
+
+// Boxes
+// ---------------------------------------
+
+// Box sizing
+@mixin box-sizing($type) {
+	-moz-box-sizing:$type;
+	-webkit-box-sizing:$type;
+	box-sizing:$type;
+}
+
+// Border radius
+@mixin border-radius($radius) {
+	-webkit-border-radius:$radius;
+	border-radius:$radius;
+}
+
+// Box shadow
+@mixin box-shadow($type) {
+	-webkit-box-shadow:$type;
+	box-shadow:$type;
+}
+
+
+// Responsive
+// ---------------------------------------
+
+// Media query
+// Using: @include media-query(table){ [styles] }
+// Breakpoints defined in variables.scss: $smartphone-start, $table-start, $desk-start
+
+$phone-end: $smartphone-start - 1px;
+$smartphone-end: $table-start - 1px;
+$table-end: $desk-start - 1px;
+
+@mixin media-query($media-query) {
+	@if $media-query == phone {
+		@media only screen and (max-width:$phone-end) { @content; }
+	}
+	@if $media-query == smartphone {
+		@media only screen and (max-width:$smartphone-end) { @content; }
+	}
+	@if $media-query == table {
+		@media only screen and (max-width:$table-end) { @content; }
+	}
+	@if $media-query == desk {
+		@media only screen and (min-width:$desk-start) { @content; }
+	}
+}
+
+// Media query for retina devices
+@mixin retina{
+	@media print,
+	(-webkit-min-device-pixel-ratio:1.25),
+	(-o-min-device-pixel-ratio:5/4),
+	(min-resolution:120dpi){
+		@content;
+	}
+}
+
+
+// CSS3
+// ---------------------------------------
+
+// Vendor
+@mixin vendor($property, $value...) {
+	-webkit-#{$property}:$value;
+		-moz-#{$property}:$value;
+		 -ms-#{$property}:$value;
+		  -o-#{$property}:$value;
+			  #{$property}:$value;
+}
+
+// Transform
+@mixin transform($type) {
+	-moz-transform:$type;
+	-webkit-transform:$type;
+	-o-transform:$type;
+	-ms-transform:$type;
+	transform:$type;
+}
+
+// Transform origin
+@mixin transform-origin($type) {
+	-moz-transform-origin:$type;
+	-webkit-transform-origin:$type;
+	-o-transform-origin:$type;
+	-ms-transform-origin:$type;
+	transform-origin:$type;
+}
+
+// Transition
+@mixin transition($type) {
+	-webkit-transition:$type;
+	-moz-transition:$type;
+	-ms-transition:$type;
+	-o-transition:$type;
+	transition:$type;
+}
+
+// Keyframe
+@mixin keyframe ($animation-name) {
+	@-webkit-keyframes $animation-name {
+		@content;
+	}
+	@-moz-keyframes $animation-name {
+		@content;
+	}
+	@-ms-keyframes $animation-name {
+		@content;
+	}
+	@-o-keyframes $animation-name {
+		@content;
+	}
+	@keyframes $animation-name{
+		@content;
+	}
+}

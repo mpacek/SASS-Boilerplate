@@ -1,0 +1,34 @@
+// ---------------------------------------
+// Reset
+// ---------------------------------------
+
+@if $global-border-box == true {
+	* {
+		&,
+		&:before,
+		&:after{
+			@include box-sizing(border-box);
+		}
+	}
+}
+
+// Elements
+h1,h2,h3,h4,h5,h6,
+p,blockquote,pre,
+dl,dd,ol,ul,
+form,fieldset,legend,
+table,th,td,caption,
+hr {
+	margin:0;
+	padding:0;
+}
+
+// Extra cursor
+abbr[title],dfn[title] {
+	cursor:help;
+}
+
+// Remove underline
+u,ins{
+	text-decoration:none;
+}
