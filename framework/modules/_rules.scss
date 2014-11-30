@@ -1,15 +1,13 @@
-@if $use-rules == true{
+@if $use-rules == true {
 // ---------------------------------------
 // Rules
 // ---------------------------------------
 
 .rule {
-	margin-bottom:$base-spacing-unit - 1px;
-	margin-bottom:(($base-spacing-unit - 1px) / $base-font-size)*1rem;
-	color:$base-ui-color;
+	margin-bottom:$base-spacing - 1px;
+	margin-bottom:(($base-spacing - 1px) / $base-font-size)*1rem;
 	border:none;
-	border-bottom-width:1px;
-	border-bottom-style:solid;
+	border-bottom:1px solid $base-ui-color;
 }
 
 // Rule dotted

@@ -7,7 +7,7 @@ table {
 }
 th,
 td {
-	padding:$base-spacing-unit / 4;
+	padding:$base-spacing / 4;
 	
 	@include media-query(phone) { 
 		padding:$half-spacing-unit;

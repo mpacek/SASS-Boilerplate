@@ -13,12 +13,8 @@
 	content:"\002F" "\00A0";
 }
 
-
-// Assign a delimiter on the fly through a data attribute, e.g.:
-// <ol class="nav breadcrumb">
-// 	<li><a href=#>Item 1</a></li>
-// 	<li data-breadcrumb="|"><a href=#>Item 2</a></li>
-// </ol>
+// Assign a delimiter through a data attribute, 
+// e.g.: data-breadcrumb="|"
 .breadcrumb > li + li[data-breadcrumb]:before {
 	content:attr(data-breadcrumb) "\00A0";
 }

@@ -4,7 +4,7 @@
 // ---------------------------------------
 
 %text-cols{
-	@include vendor(column-gap, $base-spacing-unit);
+	@include vendor(column-gap, $base-spacing);
 }
 .text-cols--2    { @extend %text-cols; @include vendor(column-count, 2); }
 .text-cols--3    { @extend %text-cols; @include vendor(column-count, 3); }

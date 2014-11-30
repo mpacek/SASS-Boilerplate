@@ -1,13 +1,13 @@
 @if $use-pagination == true {
 // ---------------------------------------
 // Pagination
-// Extends 'nav'
+// Extends '.nav'
 // ---------------------------------------
 
 .pagination {
 	text-align:center;
 	li > a {
-		padding:$base-spacing-unit / 2;
+		padding:$base-spacing / 2;
 	}
 }
 

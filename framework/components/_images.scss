@@ -14,19 +14,19 @@ img {
 
 // Image placement
 .img--right {
-	margin-left:$base-spacing-unit;
-	margin-bottom:$base-spacing-unit / 2;
+	margin-left:$base-spacing;
+	margin-bottom:$base-spacing / 2;
 	float:right;
 }
 .img--left {
-	margin-right:$base-spacing-unit;
-	margin-bottom:$base-spacing-unit / 2;
+	margin-right:$base-spacing;
+	margin-bottom:$base-spacing / 2;
 	float:left;
 }
 .img--center {
 	margin-right:auto;
 	margin-left:auto;
-	margin-bottom:$base-spacing-unit;
+	margin-bottom:$base-spacing;
 	display:block;
 }
 
