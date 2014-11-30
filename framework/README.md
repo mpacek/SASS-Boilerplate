@@ -16,12 +16,12 @@
 		_defaults.scss
 		_framework.scss
 
-* helpers/ - all tools and helpers used across the project
-* base/ - low-level styling, things like a reset, normalize, print styles, layout
-* components/ - it can contain styles for basic elements like headings, lists, tables, images
-* modules/ - contains styles for elements like navigation, buttons, grid structure
-* defaults - default configuration, colors, sizes, etc.
-* framework - base sass file
+* **helpers/** - all tools and helpers used across the project
+* **base/** - low-level styling, things like a reset, normalize, print styles, layout
+* **components/** - it can contain styles for basic elements like headings, lists, tables, images
+* **modules/** - contains styles for elements like navigation, buttons, grid structure
+* **defaults** - default configuration, colors, sizes, etc.
+* **framework** - base sass file
 
 ## License
 
