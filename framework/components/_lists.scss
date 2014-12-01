@@ -9,9 +9,11 @@ li {
 	}
 }
 
-.list--decimal { 
-	list-style-type:decimal; 
-}
-.list--disc { 
-	list-style-type:disc; 
+.list {
+	&--decimal { 
+		list-style-type:decimal; 
+	}
+	&--disc { 
+		list-style-type:disc; 
+	}
 }

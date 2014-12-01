@@ -4,19 +4,21 @@
 // Extends '.Nav'
 // ------------------------------------------------ //
 
-.Breadcrumbs > li + li:before {
-	content:"\00BB" "\00A0";
-}
-
-// Path-like structure
-.Breadcrumbs--path > li + li:before {
-	content:"\002F" "\00A0";
-}
-
-// Assign a delimiter through a data attribute, 
-// e.g.: data-breadcrumb="|"
-.Breadcrumbs > li + li[data-breadcrumb]:before {
-	content:attr(data-breadcrumb) "\00A0";
+.Breadcrumbs {
+	& > li + li:before {
+		content:"\00BB" "\00A0";
+	}
+	
+	// Assign a delimiter through a data attribute, 
+	// e.g.: data-breadcrumb="|"
+	& > li + li[data-breadcrumb]:before {
+		content:attr(data-breadcrumb) "\00A0";
+	}
+	
+	// Path-like structure
+	&--path > li + li:before {
+		content:"\002F" "\00A0";
+	}
 }
 
 } //endif
