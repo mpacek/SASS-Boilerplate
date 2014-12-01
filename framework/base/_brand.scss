@@ -1,0 +1,18 @@
+// ------------------------------------------------
+// Brand
+// ------------------------------------------------ //
+
+.brand {
+	font-family:$brand-font-family +!important;
+	color:$brand-color-1 +!important;
+
+	&-face{
+		font-family:$brand-font-family +!important;
+	}
+	&-color-1 {
+		color:$brand-color-1 +!important;
+	}
+	&-color-2 {
+		color:$brand-color-2 +!important;
+	}
+}

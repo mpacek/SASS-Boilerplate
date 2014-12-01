@@ -1,0 +1,17 @@
+@if $use-split-list == true {
+// ------------------------------------------------
+// Split List
+// ------------------------------------------------ //
+
+.SplitList {
+	text-align:right;
+	list-style:none;
+	margin-left:0;
+	&-title{
+		text-align:left;
+		float:left;
+		clear:left;
+	}
+}  
+
+} //endif
