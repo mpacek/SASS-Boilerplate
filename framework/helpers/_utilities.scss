@@ -7,14 +7,18 @@
 // ------------------------------------------------
 
 // Text alignment
-.u-align--left     { text-align:left  !important; }
-.u-align--center   { text-align:center!important; }
-.u-align--right    { text-align:right !important; }
+.u-align {
+	&--left     { text-align:left  !important; }
+	&--center   { text-align:center!important; }
+	&--right    { text-align:right !important; }
+}
 
 // Font weights
-.u-weight--light      { font-weight:300!important; }
-.u-weight--normal     { font-weight:400!important; }
-.u-weight--semibold   { font-weight:600!important; }
+.u-weight {
+	&--light		{ font-weight:300!important; }
+	&--normal	{ font-weight:400!important; }
+	&--semibold	{ font-weight:600!important; }
+}
 
 // Apply capital case to an element
 .u-caps {
@@ -26,14 +30,14 @@
 // ------------------------------------------------
 
 // Box sizing
-.u-box--border {
-	@include box-sizing(border-box);
-}
-.u-box--content {
-	@include box-sizing(content-box);
+.u-box {
+	&--border 	{ @include box-sizing(border-box); }
+	&--content	{ @include box-sizing(content-box); }
 }
    
 // Floats
-.u-float--right   { float:right!important; }
-.u-float--left    { float:left !important; }
-.u-float--none    { float:none !important; }
+.u-float {
+	&--right   	{ float:right!important; }
+	&--left    	{ float:left !important; }
+	&--none    	{ float:none !important; }
+}

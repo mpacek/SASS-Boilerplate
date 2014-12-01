@@ -4,14 +4,8 @@
 
 html {
 	font:#{($base-font-size/16px)*1em}/#{$line-height-ratio} $base-font-family;
-	overflow-y:scroll;
-	min-height:100%;
 }
 
 // text selection
-::selection {
-	background:$color-selection-background; color:$color-selection-text;
-}
-::-moz-selection {
-	background:$color-selection-background; color:$color-selection-text;
-}
+::selection 		{ background:$color-selection-background; color:$color-selection-text; }
+::-moz-selection 	{ background:$color-selection-background; color:$color-selection-text; }

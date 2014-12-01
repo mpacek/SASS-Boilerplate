@@ -16,23 +16,28 @@
 }
 
 
-// Layout
+// Setup grid, columns width, or offset
 // ------------------------------------------------ 
 
-// 12 columns Grid
-@mixin grid-setup($namespace: "") {
-	.l-col#{$namespace}-12 	{ width: 100%; }
-	.l-col#{$namespace}-11 	{ width: 91.66666667%; }
-	.l-col#{$namespace}-10 	{ width: 83.33333333%; }
-	.l-col#{$namespace}-9 	{ width: 75%; }
-	.l-col#{$namespace}-8 	{ width: 66.66666667%; }
-	.l-col#{$namespace}-7 	{ width: 58.33333333%; }
-	.l-col#{$namespace}-6 	{ width: 50%; }
-	.l-col#{$namespace}-5 	{ width: 41.66666667%; }
-	.l-col#{$namespace}-4 	{ width: 33.33333333%; }
-	.l-col#{$namespace}-3 	{ width: 25%; }
-	.l-col#{$namespace}-2 	{ width: 16.66666667%; }
-	.l-col#{$namespace}-1 	{ width: 8.33333333%; }
+// Grid setup loop
+@mixin grid-setup($grid-columns, $namespace, $type) {
+	@for $i from 0 through $grid-columns {
+		@include grid-calc($i, $namespace, $type);
+	}
+}
+
+// Calculate widths, or offset
+@mixin grid-calc($index, $namespace, $type) {
+	@if ($type == width) and ($index > 0) {
+		.l-col#{$namespace}--#{$index} {
+			width: percentage(($index / $grid-columns));
+		}
+	}
+	@if ($type == offset) {
+		.l-col#{$namespace}-offset--#{$index} {
+			margin-left: percentage(($index / $grid-columns));
+		}
+	}
 }
 
 
@@ -64,7 +69,6 @@
 
 // Media query
 // Using: @include media-query(table){ [styles] }
-// Breakpoints defined in variables.scss: $smartphone-start, $table-start, $desk-start
 
 $phone-end: $smartphone-start - 1px;
 $smartphone-end: $table-start - 1px;
@@ -86,7 +90,7 @@ $table-end: $desk-start - 1px;
 }
 
 // Media query for retina devices
-@mixin retina{
+@mixin retina {
 	@media print,
 	(-webkit-min-device-pixel-ratio:1.25),
 	(-o-min-device-pixel-ratio:5/4),
@@ -100,7 +104,7 @@ $table-end: $desk-start - 1px;
 // ------------------------------------------------ 
 
 // Vendor
-@mixin vendor($property, $value...) {
+@mixin vendor($property,$value) {
 	-webkit-#{$property}:$value;
 		-moz-#{$property}:$value;
 		 -ms-#{$property}:$value;

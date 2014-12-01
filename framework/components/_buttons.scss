@@ -1,0 +1,60 @@
+@if $use-buttons == true {
+// ------------------------------------------------
+// Buttons
+// ------------------------------------------------ //
+
+.button {
+	padding:0 1em; margin:0;
+	display:inline-block;
+	vertical-align:middle; white-space:nowrap;
+	font-family:inherit; font-size:100%; line-height:3;
+	cursor:pointer;
+	border:none;
+	&,
+	&:hover {
+		text-decoration:none;
+	}
+	&:active,
+	&:focus {
+		outline:none;
+	}
+	
+	// buttons type
+	&--round {
+		@include border-radius($brand-round);
+	}
+	&--full {
+		width:100%; padding-right:0; padding-left:0;
+		text-align:center;
+	}
+	
+	// buttons size
+	&--small {
+		padding-right:0.5em;
+		padding-left:0.5em;
+		line-height:2;
+	}
+	&--large {
+		padding-right:1.5em;
+		padding-left:1.5em;
+		line-height:4;
+	}
+	&--huge {
+		padding-right:2em;
+		padding-left:2em;
+		line-height:5;
+	}
+	
+	// buttons font size
+	&--alpha {
+		font-size:3rem;
+	}
+	&--beta {
+		font-size:2rem;
+	}
+	&--gamma {
+		font-size:1rem;
+	}
+}
+
+} //endif

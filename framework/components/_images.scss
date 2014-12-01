@@ -7,27 +7,25 @@ img {
 	max-width:100%;
 	font-style:italic;
 	&[width],
-	&[height]{
+	&[height] {
 		max-width:none;
 	}
 }
 
 // Image placement
-.img--right {
-	margin-left:$base-spacing;
-	margin-bottom:$base-spacing / 2;
-	float:right;
-}
-.img--left {
-	margin-right:$base-spacing;
-	margin-bottom:$base-spacing / 2;
-	float:left;
-}
-.img--center {
-	margin-right:auto;
-	margin-left:auto;
-	margin-bottom:$base-spacing;
-	display:block;
+img {
+	&--right {
+		margin-left:$base-spacing; margin-bottom:$base-spacing / 2;
+		float:right;
+	}
+	&--left {
+		margin-right:$base-spacing; margin-bottom:$base-spacing / 2;
+		float:left;
+	}
+	&--center {
+		margin-right:auto; margin-left:auto; margin-bottom:$base-spacing;
+		display:block;
+	}
 }
 
 // Figure

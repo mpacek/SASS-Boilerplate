@@ -1,21 +1,21 @@
-@if $use-breadcrumb == true {
+@if $use-breadcrumbs == true {
 // ------------------------------------------------
 // Breadcrumbs
-// Extends '.nav'
+// Extends '.Nav'
 // ------------------------------------------------ //
 
-.breadcrumb > li + li:before {
+.Breadcrumbs > li + li:before {
 	content:"\00BB" "\00A0";
 }
 
-// path-like structure
-.breadcrumb--path > li + li:before {
+// Path-like structure
+.Breadcrumbs--path > li + li:before {
 	content:"\002F" "\00A0";
 }
 
 // Assign a delimiter through a data attribute, 
 // e.g.: data-breadcrumb="|"
-.breadcrumb > li + li[data-breadcrumb]:before {
+.Breadcrumbs > li + li[data-breadcrumb]:before {
 	content:attr(data-breadcrumb) "\00A0";
 }
 

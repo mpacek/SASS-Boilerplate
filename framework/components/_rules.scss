@@ -8,16 +8,16 @@
 	margin-bottom:(($base-spacing - 1px) / $base-font-size)*1rem;
 	border:none;
 	border-bottom:1px solid $base-ui-color;
-}
+	
+	// Rule dotted
+	&--dotted {
+		border-bottom-style:dotted;
+	}
 
-// Rule dotted
-.rule--dotted {
-	border-bottom-style:dotted;
-}
-
-// Rule dashed
-.rule--dashed {
-	border-bottom-style:dashed;
+	// Rule dashed
+	&--dashed {
+		border-bottom-style:dashed;
+	}
 }
 
 } //endif

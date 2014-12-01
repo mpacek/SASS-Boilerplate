@@ -1,0 +1,16 @@
+@if $use-columns == true{
+// ------------------------------------------------
+// Text columns
+// ------------------------------------------------ //
+
+%text-cols{
+	@include vendor(column-gap, $base-spacing);
+}
+.text-cols {
+	&--2    { @extend %text-cols; @include vendor(column-count, 2); }
+	&--3    { @extend %text-cols; @include vendor(column-count, 3); }
+	&--4    { @extend %text-cols; @include vendor(column-count, 4); }
+	&--5    { @extend %text-cols; @include vendor(column-count, 5); }
+}
+
+} //endif

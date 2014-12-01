@@ -1,4 +1,4 @@
-/*! Framework v1.0.0 */
+/*! SASS/CSS Framework v1.0.0 */
 
 /**
  * https://github.com/mpacek/framework 
@@ -10,7 +10,7 @@
 
  
 // Base styles
-// --------------------------------------- 
+// --------------------------------------------------
 	
 // Configuration
 @import "configuration"; 
@@ -19,9 +19,10 @@
 @import "helpers/mixins";
 @import "helpers/utilities";
 @import "helpers/clearfix";
-
-// $debug-mode:false; 
-// @import "helpers/debug";
+// additional:
+@import "helpers/columns";
+@import "helpers/grid";
+@import "helpers/debug";
 
 // Base
 @import "base/normalize";
@@ -29,22 +30,18 @@
 @import "base/print";
 @import "base/main";
 @import "base/layout"; 
-@import "base/brand"; 
 @import "base/margins";
-@import "base/grid";
 @import "base/wordpress";
 
 // Components
 @import "components/headings";
 @import "components/images";
 @import "components/lists";
-@import "components/quotes";
 @import "components/tables";
+@import "components/buttons";
+@import "components/rules";
 
 // Modules
-@import "modules/buttons";
-@import "modules/columns";
-@import "modules/nav";
-@import "modules/pagination";
-@import "modules/breadcrumbs";
-@import "modules/rules";
+@import "modules/Navigation";
+@import "modules/Pagination";
+@import "modules/Breadcrumbs";

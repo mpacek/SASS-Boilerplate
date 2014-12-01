@@ -6,7 +6,7 @@
 	* {
 		&,
 		&:before,
-		&:after{
+		&:after {
 			@include box-sizing(border-box);
 		}
 	}
@@ -19,8 +19,7 @@ dl,dd,ol,ul,
 form,fieldset,legend,
 table,th,td,caption,
 hr {
-	margin:0;
-	padding:0;
+	margin:0; padding:0;
 }
 
 // Extra cursor
