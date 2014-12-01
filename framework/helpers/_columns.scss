@@ -1,9 +1,9 @@
-@if $use-columns == true{
+@if $use-columns == true {
 // ------------------------------------------------
 // Text columns
 // ------------------------------------------------ //
 
-%text-cols{
+%text-cols {
 	@include vendor(column-gap, $base-spacing);
 }
 .text-cols {

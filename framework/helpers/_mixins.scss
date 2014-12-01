@@ -107,3 +107,54 @@
 		@content;
 	}
 }
+
+
+// Grid
+// ------------------------------------------------
+
+// Grid setup loop
+@mixin grid-setup($grid-columns, $namespace, $type) {
+	@for $i from 1 through $grid-columns {
+		@include grid-calc($i, $grid-columns, $namespace, $type);
+	}
+}
+
+// Calculate widths, or offset
+@mixin grid-calc($index, $grid-columns, $namespace, $type) {
+	@if ($type == width) {
+		.l-col#{$namespace}--#{$index} {
+			width: percentage(($index / $grid-columns));
+		}
+	}
+	@if ($type == offset) {
+		.l-col#{$namespace}-offset--#{$index} {
+			margin-left: percentage(($index / $grid-columns));
+		}
+	}
+}
+
+
+// Responsive
+// ------------------------------------------------
+
+// Media query
+// Using: @include media-query(table){ [styles] }
+
+$phone-end: $smartphone-start - 1px;
+$smartphone-end: $table-start - 1px;
+$table-end: $desktop-start - 1px;
+
+@mixin media-query($media-query) {
+	@if $media-query == phone {
+		@media only screen and (max-width:$phone-end) { @content; }
+	}
+	@if $media-query == smartphone {
+		@media only screen and (max-width:$smartphone-end) { @content; }
+	}
+	@if $media-query == table {
+		@media only screen and (max-width:$table-end) { @content; }
+	}
+	@if $media-query == desktop {
+		@media only screen and (min-width:$desktop-start) { @content; }
+	}
+}
