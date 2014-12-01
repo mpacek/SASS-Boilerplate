@@ -12,8 +12,8 @@
 // Base styles
 // --------------------------------------------------
 	
-// Configuration
-@import "configuration"; 
+// Defaults
+@import "defaults"; 
 
 // Helpers
 @import "helpers/mixins";
@@ -21,6 +21,7 @@
 @import "helpers/clearfix";
 @import "helpers/columns";
 @import "helpers/grid";
+@import "helpers/responsive";
 @import "helpers/debug";
 
 // Base
@@ -30,7 +31,6 @@
 @import "base/main";
 @import "base/layout"; 
 @import "base/margins";
-@import "base/paragraphs";
 @import "base/wordpress";
 @import "base/brand";
 
@@ -41,6 +41,7 @@
 @import "components/tables";
 @import "components/buttons";
 @import "components/rules";
+@import "components/paragraphs";
 
 // Modules
 @import "modules/Navigation";

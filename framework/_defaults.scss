@@ -10,10 +10,10 @@
 $debug-mode:        	false!default;
 
 // Grid
-$use-grid        		false!default;
+$use-grid:       		false!default;
 
 // Resposive
-$responsive:        	false!default;
+$use-responsive:     false!default;
 
 // Global border box
 $global-border-box: 	true!default;
@@ -92,21 +92,21 @@ $color-selection-text:			$color-white!default;
 // ------------------------------------------------
 
 // Base
-$use-wordpress      	true!default;
+$use-wordpress:      true!default;
 
 // Components
-$use-buttons			false!default;
-$use-rules				false!default;
+$use-buttons:			false!default;
+$use-rules:				false!default;
 
 // Helpers
-$use-columns			false!default;
+$use-columns:			false!default;
 
 // Modules
-$use-navigation		false!default;
-$use-breadcrumbs		false!default;
-$use-pagination		false!default;
-$use-skip-links		false!default;
-$use-split-list		false!default;
+$use-navigation:		false!default;
+$use-breadcrumbs:		false!default;
+$use-pagination:		false!default;
+$use-skip-links:		false!default;
+$use-split-list:		false!default;
 
 
 // Base variables

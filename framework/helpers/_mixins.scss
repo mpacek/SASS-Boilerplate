@@ -16,31 +16,6 @@
 }
 
 
-// Setup grid, columns width, or offset
-// ------------------------------------------------ 
-
-// Grid setup loop
-@mixin grid-setup($grid-columns, $namespace, $type) {
-	@for $i from 0 through $grid-columns {
-		@include grid-calc($i, $namespace, $type);
-	}
-}
-
-// Calculate widths, or offset
-@mixin grid-calc($index, $namespace, $type) {
-	@if ($type == width) and ($index > 0) {
-		.l-col#{$namespace}--#{$index} {
-			width: percentage(($index / $grid-columns));
-		}
-	}
-	@if ($type == offset) {
-		.l-col#{$namespace}-offset--#{$index} {
-			margin-left: percentage(($index / $grid-columns));
-		}
-	}
-}
-
-
 // Boxes
 // ---------------------------------------
 
@@ -63,31 +38,6 @@
 	box-shadow:$type;
 }
 
-
-// Responsive
-// ------------------------------------------------
-
-// Media query
-// Using: @include media-query(table){ [styles] }
-
-$phone-end: $smartphone-start - 1px;
-$smartphone-end: $table-start - 1px;
-$table-end: $desk-start - 1px;
-
-@mixin media-query($media-query) {
-	@if $media-query == phone {
-		@media only screen and (max-width:$phone-end) { @content; }
-	}
-	@if $media-query == smartphone {
-		@media only screen and (max-width:$smartphone-end) { @content; }
-	}
-	@if $media-query == table {
-		@media only screen and (max-width:$table-end) { @content; }
-	}
-	@if $media-query == desk {
-		@media only screen and (min-width:$desk-start) { @content; }
-	}
-}
 
 // Media query for retina devices
 @mixin retina {

@@ -1,4 +1,4 @@
-# SASS/CSS Framework v1.0.1
+# SASS/CSS Framework v1.0.2
 
 Sass based, Object Oriented CSS framework. 
 

@@ -21,7 +21,45 @@
 	@include media-query(table){ 
 		width:100%;
 	}
+	
+	// fluid
+	&--fluid {
+		padding-left:$layout-gutter--half; padding-right:$layout-gutter--half;
+	}
 }
-.l-container--fluid {
-	padding-left:$layout-gutter--half; padding-right:$layout-gutter--half;
-}
+
+// Grid
+@if $use-grid == true {
+
+	.l-row {
+		margin-left:- $layout-gutter--half; margin-right:- $layout-gutter--half;
+	}
+	*[class^=".l-col"] {
+		padding:0 $layout-gutter--half;
+		position:relative;
+		float:left;
+	}
+
+	// Setup grid
+	@include grid-setup(12,'',width);
+	@include grid-setup(12,'',offset);
+
+	// Resposnive
+	@if $use-responsive  == true {
+
+		@include media-query(table) { 
+			@include grid-setup(8,-m,width);
+			@include grid-setup(8,-m,offset);
+		}
+		@include media-query(smartphone) {  
+			@include grid-setup(6,-s,width);
+			@include grid-setup(6,-s,offset);
+		}
+		@include media-query(phone) { 
+			@include grid-setup(4,-xs,width);
+			@include grid-setup(4,-xs,offset);
+		}
+		
+	} //endif
+
+} //endif

@@ -5,13 +5,16 @@
 
 // Images align
 .alignleft{
-	@extend .img--left;
+	margin-right:$base-spacing; margin-bottom:$base-spacing / 2;
+	float:left;
 }
 .alignright {
-	@extend .img--right;
+	margin-left:$base-spacing; margin-bottom:$base-spacing / 2;
+	float:right;
 }
 .aligncenter {
-	@extend .img--center;
+	margin-right:auto; margin-left:auto; margin-bottom:$base-spacing;
+	display:block;
 }
 
 // Caption

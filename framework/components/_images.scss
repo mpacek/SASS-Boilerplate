@@ -13,7 +13,7 @@ img {
 }
 
 // Image placement
-img {
+.img {
 	&--right {
 		margin-left:$base-spacing; margin-bottom:$base-spacing / 2;
 		float:right;
