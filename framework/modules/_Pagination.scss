@@ -1,0 +1,14 @@
+@if $use-pagination == true {
+// ------------------------------------------------
+// Pagination
+// Extends '.Navigation'
+// ------------------------------------------------ //
+
+.Pagination {
+	text-align:center;
+	li > a {
+		padding:$base-spacing / 2;
+	}
+}
+
+} //endif
