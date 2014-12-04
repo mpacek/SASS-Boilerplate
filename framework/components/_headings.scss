@@ -3,21 +3,9 @@
 // ------------------------------------------------ //
 
 // h1 -> h6
-h1,.alpha {
-	@include font-size($h1-size);
-}
-h2,.beta {
-	@include font-size($h2-size);
-}
-h3,.gamma {
-	@include font-size($h3-size);
-}
-h4,.delta {
-	@include font-size($h4-size);
-}
-h5,.epsilon {
-	@include font-size($h5-size);
-}
-h6,.zeta {
-	@include font-size($h6-size);
-}
+h1 { @include font-size($font-size--h1); }
+h2 { @include font-size($font-size--h2); }
+h3 { @include font-size($font-size--h3); }
+h4 { @include font-size($font-size--h4); } 
+h5 { @include font-size($font-size--h5); } 
+h6 { @include font-size($font-size--h6); }

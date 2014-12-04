@@ -9,9 +9,9 @@
 // Font-size
 @mixin font-size($font-size, $line-height:true) {
 	font-size:$font-size;
-	font-size:($font-size / $base-font-size)*1rem;
+	font-size:($font-size / $font-size--base)*1rem;
 	@if $line-height == true{
-		line-height:ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+		line-height:ceil($font-size / $line-height--base) * ($line-height--base / $font-size);
 	}
 }
 
@@ -122,12 +122,12 @@
 // Calculate widths, or offset
 @mixin grid-calc($index, $grid-columns, $namespace, $type) {
 	@if ($type == width) {
-		.l-col#{$namespace}--#{$index} {
+		.l-col-#{$namespace}-#{$index} {
 			width: percentage(($index / $grid-columns));
 		}
 	}
 	@if ($type == offset) {
-		.l-col#{$namespace}-offset--#{$index} {
+		.l-col-#{$namespace}-offset-#{$index} {
 			margin-left: percentage(($index / $grid-columns));
 		}
 	}

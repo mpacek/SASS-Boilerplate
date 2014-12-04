@@ -14,15 +14,15 @@ img {
 
 // Image placement
 .img {
-	&--right {
+	&-right {
 		margin-left:$base-spacing; margin-bottom:$base-spacing / 2;
 		float:right;
 	}
-	&--left {
+	&-left {
 		margin-right:$base-spacing; margin-bottom:$base-spacing / 2;
 		float:left;
 	}
-	&--center {
+	&-center {
 		margin-right:auto; margin-left:auto; margin-bottom:$base-spacing;
 		display:block;
 	}

@@ -34,6 +34,7 @@
 	.l-row {
 		margin-left:- $layout-gutter--half; margin-right:- $layout-gutter--half;
 	}
+	.l-col,
 	*[class^=".l-col"] {
 		padding:0 $layout-gutter--half;
 		position:relative;
@@ -41,23 +42,23 @@
 	}
 
 	// Setup grid
-	@include grid-setup(12,'',width);
-	@include grid-setup(12,'',offset);
+	@include grid-setup($grid-cols--lg,'',width);
+	@include grid-setup($grid-cols--lg,'',offset);
 
 	// Resposnive
 	@if $use-responsive  == true {
 
 		@include media-query(table) { 
-			@include grid-setup(8,-m,width);
-			@include grid-setup(8,-m,offset);
+			@include grid-setup($grid-cols--md,-md,width);
+			@include grid-setup($grid-cols--md,-md,offset);
 		}
 		@include media-query(smartphone) {  
-			@include grid-setup(6,-s,width);
-			@include grid-setup(6,-s,offset);
+			@include grid-setup($grid-cols--sm,-sm,width);
+			@include grid-setup($grid-cols--sm,-sm,offset);
 		}
 		@include media-query(phone) { 
-			@include grid-setup(4,-xs,width);
-			@include grid-setup(4,-xs,offset);
+			@include grid-setup($grid-cols--xs,-xs,width);
+			@include grid-setup($grid-cols--xs,-xs,offset);
 		}
 		
 	} //endif

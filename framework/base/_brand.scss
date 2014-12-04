@@ -4,15 +4,12 @@
 
 .brand {
 	font-family:$brand-font-family +!important;
-	color:$color-brand-1 +!important;
+	color:$color-brand +!important;
 
 	&-face{
 		font-family:$brand-font-family +!important;
 	}
-	&-color-1 {
-		color:$color-brand-1 +!important;
-	}
-	&-color-2 {
-		color:$color-brand-2 +!important;
+	&-color {
+		color:$color-brand +!important;
 	}
 }

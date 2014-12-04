@@ -5,16 +5,11 @@
 
 .rule {
 	margin-bottom:$base-spacing - 1px;
-	margin-bottom:(($base-spacing - 1px) / $base-font-size)*1rem;
-	border:none;
-	border-bottom:1px solid $base-ui-color;
-	
-	// Rule dotted
+	margin-bottom:(($base-spacing - 1px) / $font-size--base)*1rem;
+	border:none; border-bottom:1px solid $color-ui;
 	&--dotted {
 		border-bottom-style:dotted;
 	}
-
-	// Rule dashed
 	&--dashed {
 		border-bottom-style:dashed;
 	}

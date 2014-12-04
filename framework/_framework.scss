@@ -19,9 +19,6 @@
 @import "helpers/mixins";
 @import "helpers/utilities";
 @import "helpers/clearfix";
-@import "helpers/columns";
-@import "helpers/grid";
-@import "helpers/responsive";
 @import "helpers/debug";
 
 // Base
@@ -32,7 +29,6 @@
 @import "base/layout"; 
 @import "base/margins";
 @import "base/wordpress";
-@import "base/brand";
 
 // Components
 @import "components/headings";

@@ -4,12 +4,11 @@
 
 table {
 	width:100%;
-	
 	// Bordered table
 	&--bordered {
 		th,
 		td {
-			border:1px solid $base-ui-color;
+			border:1px solid $color-ui;
 			&:empty {
 				border:none;
 			}
@@ -21,7 +20,6 @@ table {
 			border-right-width:2px;
 		}
 	}
-	
 	// Striped table
 	&--striped {
 		tbody tr:nth-of-type(odd) {

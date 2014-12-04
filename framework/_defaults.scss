@@ -7,13 +7,18 @@
 // ------------------------------------------------
 
 // Debug mode
-$debug-mode:        	false!default;
+$debug-mode:        	true!default;
 
 // Grid
-$use-grid:       		false!default;
+$use-grid:       		true!default;
+
+$grid-cols--xs:		4!default;
+$grid-cols--sm:		6!default;
+$grid-cols--md:		8!default;
+$grid-cols--lg:		12!default;
 
 // Resposive
-$use-responsive:     false!default;
+$use-responsive:     true!default;
 
 // Global border box
 $global-border-box: 	true!default;
@@ -22,11 +27,8 @@ $global-border-box: 	true!default;
 // Design
 // ------------------------------------------------
 
-// Base ui color
-$base-ui-color:     	#ccc!default;
-
 // Base round
-$base-round:        	4px!default;
+$border-radius:      4px!default;
 
    
 // Layout
@@ -43,49 +45,46 @@ $smartphone-start: 	480px!default;
 // Text
 // ------------------------------------------------
 
-// Base font settings
-$base-font-size:    	14px!default;
-$base-line-height:  	21px!default;
-$base-font-family:	Arial,Helvetica,sans-serif!default;
-
 // Brand font family
-$brand-font-family:	'Times New Roman',serif!default;
+$font-family--brand:	'Times New Roman',serif!default;
+
+// Base font settings
+$font-size--base:    14px!default;
+$line-height--base:  21px!default;
+$font-family--base:	Arial,Helvetica,sans-serif!default;
 
 // Font sizes
-$h1-size: 36px!default; // .alpha
-$h2-size: 30px!default; // .beta
-$h3-size: 24px!default; // .gamma
-$h4-size: 20px!default; // .delta
-$h5-size: 16px!default; // .epsilon
-$h6-size: 14px!default; // .zeta
+$font-size--xs:		10px!default;
+$font-size--sm:		12px!default;
+$font-size--lg:		24px!default;
+$font-size--xl:		32px!default;
 
-$small-size-1:10px!default;
-$small-size-2:12px!default;
-
-$medium-size-1:14px!default;
-$medium-size-2:16px!default;
-
-$big-size-1:24px!default;
-$big-size-2:32px!default;
+$font-size--h1: 		36px!default;
+$font-size--h2: 		30px!default;
+$font-size--h3: 		24px!default;
+$font-size--h4: 		20px!default;
+$font-size--h5: 		16px!default;
+$font-size--h6: 		14px!default;
 
 
 // Colors 
 // ------------------------------------------------
 
-$color-black: 			#000;
-$color-white: 			#fff;
-$color-link:  			#ffff00;
+$color-black: 			#000 !default;
+$color-white: 			#fff !default;
 
-$color-gray:			#999;
-$color-gray--light:	#ccc;
-$color-gray--dark:	#666;
+$color-base: 			#000 !default;
+$color-brand:			#000 !default;
+$color-link:  			#ffff00 !default;
+$color-ui:     		#ccc !default;
 
-$color-brand-1:		#000;
-$color-brand-2:		#000;
+$color-gray:			#999 !default;
+$color-gray-light:	#ccc !default;
+$color-gray-dark:		#666 !default;
 
 // Selection
-$color-selection-background:	$color-gray!default;
-$color-selection-text:			$color-white!default;
+$color-selection--background:	$color-gray!default;
+$color-selection--text:			$color-white!default;
 
 
 // Additional elements
@@ -95,24 +94,26 @@ $color-selection-text:			$color-white!default;
 $use-wordpress:      true!default;
 
 // Components
-$use-buttons:			false!default;
-$use-rules:				false!default;
+$use-buttons:			true!default;
+$use-rules:				true!default;
 
 // Helpers
-$use-columns:			false!default;
+$use-columns:			true!default;
+$use-fonts:				true!default;
+$use-colors:			true!default;
 
 // Modules
-$use-navigation:		false!default;
-$use-breadcrumbs:		false!default;
-$use-pagination:		false!default;
-$use-skip-links:		false!default;
-$use-split-list:		false!default;
+$use-navigation:		true!default;
+$use-breadcrumbs:		true!default;
+$use-pagination:		true!default;
+$use-skip-links:		true!default;
+$use-split-list:		true!default;
 
 
 // Base variables
 // ------------------------------------------------
 
-$base-spacing: 			$base-line-height!default;
+$base-spacing: 			$line-height--base!default;
 $base-spacing--half: 	$base-spacing / 2!default;
-$line-height-ratio: 		$base-line-height / $base-font-size;
-$layout-gutter--half: 	$layout-gutter / 2!default;
+$line-height-ratio: 		$line-height--base / $font-size--base;
+$layout-gutter--half:	$layout-gutter / 2!default;
