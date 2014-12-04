@@ -23,23 +23,19 @@ $use-responsive:     false!default;
 // Global border box
 $global-border-box: 	false!default;
 
-
-// Design
-// ------------------------------------------------
-
-// Base round
+// Base border radius
 $border-radius:      4px!default;
 
    
 // Layout
 // ------------------------------------------------
 
-$layout-gutter: 		40px!default;
+$layout-gutter: 				40px!default;
 
 // Breakpoints
-$desktop-start: 		1160px!default;
-$table-start: 			720px!default;
-$smartphone-start: 	480px!default;
+$layout-desktop--start:		1160px!default;
+$layout-table--start:		720px!default;
+$layout-smartphone--start:	480px!default;
 
    
 // Text

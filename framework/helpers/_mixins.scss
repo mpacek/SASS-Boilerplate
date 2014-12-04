@@ -140,21 +140,21 @@
 // Media query
 // Using: @include media-query(table){ [styles] }
 
-$phone-end: $smartphone-start - 1px;
-$smartphone-end: $table-start - 1px;
-$table-end: $desktop-start - 1px;
+$layout-phone--end: $layout-smartphone--start - 1px;
+$layout-smartphone--end: $layout-table--start - 1px;
+$layout-table--end: $layout-desktop--start - 1px;
 
 @mixin media-query($media-query) {
 	@if $media-query == phone {
-		@media only screen and (max-width:$phone-end) { @content; }
+		@media only screen and (max-width:$layout-phone--end) { @content; }
 	}
 	@if $media-query == smartphone {
-		@media only screen and (max-width:$smartphone-end) { @content; }
+		@media only screen and (max-width:$layout-smartphone--end) { @content; }
 	}
 	@if $media-query == table {
-		@media only screen and (max-width:$table-end) { @content; }
+		@media only screen and (max-width:$layout-table--end) { @content; }
 	}
 	@if $media-query == desktop {
-		@media only screen and (min-width:$desktop-start) { @content; }
+		@media only screen and (min-width:$layout-desktop--start) { @content; }
 	}
 }
