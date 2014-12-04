@@ -7,10 +7,10 @@
 // ------------------------------------------------
 
 // Debug mode
-$debug-mode:        	true!default;
+$debug-mode:        	false!default;
 
 // Grid
-$use-grid:       		true!default;
+$use-grid:       		false!default;
 
 $grid-cols--xs:		4!default;
 $grid-cols--sm:		6!default;
@@ -18,10 +18,10 @@ $grid-cols--md:		8!default;
 $grid-cols--lg:		12!default;
 
 // Resposive
-$use-responsive:     true!default;
+$use-responsive:     false!default;
 
 // Global border box
-$global-border-box: 	true!default;
+$global-border-box: 	false!default;
 
 
 // Design
@@ -70,17 +70,17 @@ $font-size--h6: 		14px!default;
 // Colors 
 // ------------------------------------------------
 
-$color-black: 			#000 !default;
-$color-white: 			#fff !default;
+$color-black: 			#000!default;
+$color-white: 			#fff!default;
 
-$color-base: 			#000 !default;
-$color-brand:			#000 !default;
-$color-link:  			#ffff00 !default;
-$color-ui:     		#ccc !default;
+$color-base: 			#000!default;
+$color-brand:			#000!default;
+$color-link:  			#ffff00!default;
+$color-ui:     		#ccc!default;
 
-$color-gray:			#999 !default;
-$color-gray-light:	#ccc !default;
-$color-gray-dark:		#666 !default;
+$color-gray:			#999!default;
+$color-gray-light:	#ccc!default;
+$color-gray-dark:		#666!default;
 
 // Selection
 $color-selection--background:	$color-gray!default;
@@ -91,23 +91,23 @@ $color-selection--text:			$color-white!default;
 // ------------------------------------------------
 
 // Base
-$use-wordpress:      true!default;
+$use-wordpress:      false!default;
 
 // Components
-$use-buttons:			true!default;
-$use-rules:				true!default;
+$use-buttons:			false!default;
+$use-rules:				false!default;
 
 // Helpers
-$use-columns:			true!default;
-$use-fonts:				true!default;
-$use-colors:			true!default;
+$use-columns:			false!default;
+$use-fonts:				false!default;
+$use-colors:			false!default;
 
 // Modules
-$use-navigation:		true!default;
-$use-breadcrumbs:		true!default;
-$use-pagination:		true!default;
-$use-skip-links:		true!default;
-$use-split-list:		true!default;
+$use-navigation:		false!default;
+$use-breadcrumbs:		false!default;
+$use-pagination:		false!default;
+$use-skip-links:		false!default;
+$use-split-list:		false!default;
 
 
 // Base variables
