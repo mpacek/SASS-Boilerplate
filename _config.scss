@@ -7,10 +7,10 @@
 // ------------------------------------------------
 
 // Debug mode
-$debug-mode:        	true;
+$debug-mode:			true;
 
 // Grid
-$use-grid:       		true;
+$use-grid:				true;
 
 $grid-cols--xs:		4;
 $grid-cols--sm:		6;
@@ -18,28 +18,24 @@ $grid-cols--md:		8;
 $grid-cols--lg:		12;
 
 // Resposive
-$use-responsive:     true;
+$use-responsive:		true;
 
 // Global border box
-$global-border-box: 	true;
+$global-border-box:	true;
 
-
-// Design
-// ------------------------------------------------
-
-// Base round
-$border-radius:      4px;
+// Base border radius
+$border-radius:		4px;
 
    
 // Layout
 // ------------------------------------------------
 
-$layout-gutter: 		40px;
+$layout-gutter: 				40px;
 
 // Breakpoints
-$desktop-start: 		1160px;
-$table-start: 			720px;
-$smartphone-start: 	480px;
+$layout-desktop--start:		1160px;
+$layout-table--start:		720px;
+$layout-smartphone--start:	480px;
 
    
 // Text
@@ -49,8 +45,8 @@ $smartphone-start: 	480px;
 $font-family--brand:	'Times New Roman',serif;
 
 // Base font settings
-$font-size--base:    14px;
-$line-height--base:  21px;
+$font-size--base:		14px;
+$line-height--base:	21px;
 $font-family--base:	Arial,Helvetica,sans-serif;
 
 // Font sizes
@@ -59,24 +55,24 @@ $font-size--sm:		12px;
 $font-size--lg:		24px;
 $font-size--xl:		32px;
 
-$font-size--h1: 		36px;
-$font-size--h2: 		30px;
-$font-size--h3: 		24px;
-$font-size--h4: 		20px;
-$font-size--h5: 		16px;
-$font-size--h6: 		14px;
+$font-size--h1:		36px;
+$font-size--h2:		30px;
+$font-size--h3:		24px;
+$font-size--h4:		20px;
+$font-size--h5:		16px;
+$font-size--h6:		14px;
 
 
 // Colors 
 // ------------------------------------------------
 
-$color-black: 			#000;
-$color-white: 			#fff;
+$color-black:			#000;
+$color-white:			#fff;
 
-$color-base: 			#000;
+$color-base:			#000;
 $color-brand:			#000;
-$color-link:  			#ffff00;
-$color-ui:     		#ccc;
+$color-link:			#ffff00;
+$color-ui:				#ccc;
 
 $color-gray:			#999;
 $color-gray-light:	#ccc;
@@ -91,7 +87,7 @@ $color-selection--text:			$color-white;
 // ------------------------------------------------
 
 // Base
-$use-wordpress:      true;
+$use-wordpress:		true;
 
 // Components
 $use-buttons:			true;

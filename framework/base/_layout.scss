@@ -13,7 +13,7 @@
 
 // Container
 .l-container {
-	width:$desktop-start + $layout-gutter; 
+	width:$layout-desktop--start + $layout-gutter; 
 	margin-left:auto; margin-right:auto; 
 	padding-left:$layout-gutter--half; padding-right:$layout-gutter--half;
 	@extend .cf;

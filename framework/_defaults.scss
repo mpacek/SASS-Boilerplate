@@ -7,10 +7,10 @@
 // ------------------------------------------------
 
 // Debug mode
-$debug-mode:        	false!default;
+$debug-mode:			false!default;
 
 // Grid
-$use-grid:       		false!default;
+$use-grid:				false!default;
 
 $grid-cols--xs:		4!default;
 $grid-cols--sm:		6!default;
@@ -18,13 +18,13 @@ $grid-cols--md:		8!default;
 $grid-cols--lg:		12!default;
 
 // Resposive
-$use-responsive:     false!default;
+$use-responsive:		false!default;
 
 // Global border box
-$global-border-box: 	false!default;
+$global-border-box:	false!default;
 
 // Base border radius
-$border-radius:      4px!default;
+$border-radius:		4px!default;
 
    
 // Layout
@@ -45,8 +45,8 @@ $layout-smartphone--start:	480px!default;
 $font-family--brand:	'Times New Roman',serif!default;
 
 // Base font settings
-$font-size--base:    14px!default;
-$line-height--base:  21px!default;
+$font-size--base:		14px!default;
+$line-height--base:	21px!default;
 $font-family--base:	Arial,Helvetica,sans-serif!default;
 
 // Font sizes
@@ -55,24 +55,24 @@ $font-size--sm:		12px!default;
 $font-size--lg:		24px!default;
 $font-size--xl:		32px!default;
 
-$font-size--h1: 		36px!default;
-$font-size--h2: 		30px!default;
-$font-size--h3: 		24px!default;
-$font-size--h4: 		20px!default;
-$font-size--h5: 		16px!default;
-$font-size--h6: 		14px!default;
+$font-size--h1:		36px!default;
+$font-size--h2:		30px!default;
+$font-size--h3:		24px!default;
+$font-size--h4:		20px!default;
+$font-size--h5:		16px!default;
+$font-size--h6:		14px!default;
 
 
 // Colors 
 // ------------------------------------------------
 
-$color-black: 			#000!default;
-$color-white: 			#fff!default;
+$color-black:			#000!default;
+$color-white:			#fff!default;
 
-$color-base: 			#000!default;
+$color-base:			#000!default;
 $color-brand:			#000!default;
-$color-link:  			#ffff00!default;
-$color-ui:     		#ccc!default;
+$color-link:			#ffff00!default;
+$color-ui:				#ccc!default;
 
 $color-gray:			#999!default;
 $color-gray-light:	#ccc!default;
@@ -87,7 +87,7 @@ $color-selection--text:			$color-white!default;
 // ------------------------------------------------
 
 // Base
-$use-wordpress:      false!default;
+$use-wordpress:		false!default;
 
 // Components
 $use-buttons:			false!default;
@@ -109,7 +109,7 @@ $use-split-list:		false!default;
 // Base variables
 // ------------------------------------------------
 
-$base-spacing: 			$line-height--base!default;
-$base-spacing--half: 	$base-spacing / 2!default;
-$line-height-ratio: 		$line-height--base / $font-size--base;
+$base-spacing:				$line-height--base!default;
+$base-spacing--half:		$base-spacing / 2!default;
+$line-height-ratio:		$line-height--base / $font-size--base;
 $layout-gutter--half:	$layout-gutter / 2!default;
