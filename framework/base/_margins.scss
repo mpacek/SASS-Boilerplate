@@ -10,17 +10,17 @@ table,
 fieldset,figure,
 pre {
 	margin-bottom:$base-spacing;
-	margin-bottom:($base-spacing / $font-size--base)*1rem;
+	margin-bottom:($base-spacing / $font-size-base)*1rem;
 }
 
 // hr bottom margin
 hr {
 	margin-bottom:$base-spacing - 1px;
-	margin-bottom:(($base-spacing - 1px) / $font-size--base)*1rem;
+	margin-bottom:(($base-spacing - 1px) / $font-size-base)*1rem;
 }
 
 // lists left margin
 ul,ol {
 	margin-left:2 * $base-spacing;
-	margin-left:(2 * $base-spacing / $font-size--base)*1rem;
+	margin-left:(2 * $base-spacing / $font-size-base)*1rem;
 }

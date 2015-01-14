@@ -6,61 +6,52 @@
 // Global settings
 // ------------------------------------------------
 
-// Debug mode
-$debug-mode:			false!default;
-
-// Grid
-$use-grid:				false!default;
-
-$grid-cols--xs:		4!default;
-$grid-cols--sm:		6!default;
-$grid-cols--md:		8!default;
-$grid-cols--lg:		12!default;
-
 // Resposive
 $use-responsive:		false!default;
 
 // Global border box
 $global-border-box:	false!default;
 
-// Base border radius
-$border-radius:		4px!default;
+// Grid
+// ------------------------------------------------
+
+$use-grid:				false!default;
+
+// Grid gutter
+$grid-gutter: 			0!default;
+
+// Grid columns | responsive
+$grid-cols-xs:			4!default;
+$grid-cols-sm:			6!default;
+$grid-cols-md:			8!default;
+$grid-cols-lg:			12!default;
 
    
 // Layout
 // ------------------------------------------------
 
-$layout-gutter: 				40px!default;
-
-// Breakpoints
-$layout-desktop--start:		1160px!default;
-$layout-table--start:		720px!default;
-$layout-smartphone--start:	480px!default;
+// Breakpoints | responsive
+$layout-desktop-start:		1160px!default;
+$layout-table-start:			720px!default;
+$layout-smartphone-start:	480px!default;
 
    
 // Text
 // ------------------------------------------------
 
-// Brand font family
-$font-family--brand:	'Times New Roman',serif!default;
+// Font family
+$font-family-1:	Arial,Helvetica,sans-serif!default;
+$font-family-2:	'Times New Roman',serif!default;
 
-// Base font settings
-$font-size--base:		14px!default;
-$line-height--base:	21px!default;
-$font-family--base:	Arial,Helvetica,sans-serif!default;
+// Base font size
+$font-size-base:		14px!default;
+$line-height-base:	21px!default;
 
 // Font sizes
-$font-size--xs:		10px!default;
-$font-size--sm:		12px!default;
-$font-size--lg:		24px!default;
-$font-size--xl:		32px!default;
-
-$font-size--h1:		36px!default;
-$font-size--h2:		30px!default;
-$font-size--h3:		24px!default;
-$font-size--h4:		18px!default;
-$font-size--h5:		16px!default;
-$font-size--h6:		14px!default;
+$font-size-xs:			10px!default;
+$font-size-sm:			12px!default;
+$font-size-lg:			24px!default;
+$font-size-xl:			32px!default;
 
 
 // Colors 
@@ -92,24 +83,20 @@ $use-wordpress:		false!default;
 // Components
 $use-buttons:			false!default;
 $use-rules:				false!default;
+$use-skip-links:		false!default;
 
 // Helpers
 $use-columns:			false!default;
 $use-fonts:				false!default;
 $use-colors:			false!default;
 
-// Modules
-$use-navigation:		false!default;
-$use-breadcrumbs:		false!default;
-$use-pagination:		false!default;
-$use-skip-links:		false!default;
-$use-split-list:		false!default;
-
 
 // Base variables
 // ------------------------------------------------
 
-$base-spacing:				$line-height--base!default;
-$base-spacing--half:		$base-spacing / 2!default;
-$line-height-ratio:		$line-height--base / $font-size--base;
-$layout-gutter--half:	$layout-gutter / 2!default;
+$base-spacing:				$line-height-base!default;
+$base-spacing-half:		$base-spacing / 2!default;
+$base-spacing-double:	$base-spacing * 2!default;
+$line-height-ratio:		$line-height-base / $font-size-base;
+$grid-gutter-half:		$layout-gutter / 2!default;
+$grid-gutter-double:		$layout-gutter * 2!default;

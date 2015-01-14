@@ -1,45 +1,18 @@
 // ------------------------------------------------
 // Utilities
 // ------------------------------------------------ //
-   
-   
-// Text
+
+
+// Clearfix
 // ------------------------------------------------
 
-// Text alignment
-.u-align {
-	&-left     { text-align:left  !important; }
-	&-center   { text-align:center!important; }
-	&-right    { text-align:right !important; }
-}
-
-// Font weights
-.u-weight {
-	&-light		{ font-weight:300!important; }
-	&-normal	{ font-weight:400!important; }
-	&-semibold	{ font-weight:600!important; }
-}
-
-// Apply capital case to an element
-.u-caps {
-	text-transform:uppercase !important;
-}
-
-
-// Layout
-// ------------------------------------------------
-
-// Box sizing
-.u-box {
-	&-border 	{ @include box-sizing(border-box); }
-	&-content	{ @include box-sizing(content-box); }
-}
-   
-// Floats
-.u-float {
-	&-right   	{ float:right!important; }
-	&-left    	{ float:left !important; }
-	&-none    	{ float:none !important; }
+.cf {
+	&:after,
+	&:before	{
+		content:"";
+		display:table;
+		clear:both;
+	}
 }
 
 
@@ -48,13 +21,11 @@
 @if $use-fonts == true {
 
 .u-font {
-	&-xs 		{ font-size:$font-size--xs; }
-	&-sm 		{ font-size:$font-size--sm; }
-	&-md 		{ font-size:$font-size--base; }
-	&-lg 		{ font-size:$font-size--lg; }
-	&-xl 		{ font-size:$font-size--xl; }
-	&-base 	{ font-size:$font-family--base; }
-	&-brand 	{ font-size:$font-family--brand; }
+	&-xs 		{ font-size:$font-size-xs; }
+	&-sm 		{ font-size:$font-size-sm; }
+	&-md 		{ font-size:$font-size-base; }
+	&-lg 		{ font-size:$font-size-lg; }
+	&-xl 		{ font-size:$font-size-xl; }
 }
 
 } //endif

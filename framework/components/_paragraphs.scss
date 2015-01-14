@@ -3,6 +3,6 @@
 // ------------------------------------------------ //
 
 .lead {
-	@include font-size($font-size--base * 1.125);
+	@include font-size($font-size-base * 1.125);
 	font-weight:bold;
 }

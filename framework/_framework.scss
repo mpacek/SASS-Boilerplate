@@ -18,8 +18,6 @@
 // Helpers
 @import "helpers/mixins";
 @import "helpers/utilities";
-@import "helpers/clearfix";
-@import "helpers/debug";
 
 // Base
 @import "base/normalize";
@@ -31,15 +29,9 @@
 @import "base/wordpress";
 
 // Components
-@import "components/headings";
 @import "components/images";
 @import "components/lists";
 @import "components/tables";
 @import "components/buttons";
 @import "components/rules";
 @import "components/paragraphs";
-
-// Modules
-@import "modules/Navigation";
-@import "modules/Pagination";
-@import "modules/Breadcrumbs";

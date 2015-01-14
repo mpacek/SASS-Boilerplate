@@ -7,11 +7,11 @@
 // ------------------------------------------------
 
 // Font-size
-@mixin font-size($font-size, $line-height:true) {
+@mixin font-size($font-size, $line-height:false) {
 	font-size:$font-size;
 	font-size:($font-size / $font-size--base)*1rem;
-	@if $line-height == true{
-		line-height:ceil($font-size / $line-height--base) * ($line-height--base / $font-size);
+	@if $line-height == true {
+		line-height:ceil($font-size / $line-height-base) * ($line-height-base / $font-size);
 	}
 }
 
@@ -37,7 +37,6 @@
 	-webkit-box-shadow:$type;
 	box-shadow:$type;
 }
-
 
 // Media query for retina devices
 @mixin retina {
@@ -140,21 +139,21 @@
 // Media query
 // Using: @include media-query(table){ [styles] }
 
-$layout-phone--end: $layout-smartphone--start - 1px;
-$layout-smartphone--end: $layout-table--start - 1px;
-$layout-table--end: $layout-desktop--start - 1px;
+$layout-phone-end: $layout-smartphone-start - 1px;
+$layout-smartphone-end: $layout-table-start - 1px;
+$layout-table-end: $layout-desktop-start - 1px;
 
 @mixin media-query($media-query) {
 	@if $media-query == phone {
-		@media only screen and (max-width:$layout-phone--end) { @content; }
+		@media only screen and (max-width:$layout-phone-end) { @content; }
 	}
 	@if $media-query == smartphone {
-		@media only screen and (max-width:$layout-smartphone--end) { @content; }
+		@media only screen and (max-width:$layout-smartphone-end) { @content; }
 	}
 	@if $media-query == table {
-		@media only screen and (max-width:$layout-table--end) { @content; }
+		@media only screen and (max-width:$layout-table-end) { @content; }
 	}
 	@if $media-query == desktop {
-		@media only screen and (min-width:$layout-desktop--start) { @content; }
+		@media only screen and (min-width:$layout-desktop-start) { @content; }
 	}
 }
