@@ -37,18 +37,18 @@ Sass based, Object Oriented CSS framework.
 
 **Comments:**
 
- // --------------------------------------------------------
- // Section comment block 
- // -------------------------------------------------------- //
+	// --------------------------------------------------------
+	// Section comment block 
+	// -------------------------------------------------------- //
  
- // Group comment block.
- // Ideal for multi-line 
- // explanations and documentation.
+	// Group comment block.
+	// Ideal for multi-line 
+	// explanations and documentation.
  
- // Sub-section comment block
- // --------------------------------------------------------
+	// Sub-section comment block
+	// --------------------------------------------------------
  
- // Basic comment
+	// Basic comment
 
 ## License
 
