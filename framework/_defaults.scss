@@ -33,18 +33,18 @@ $grid-cols-lg:			12!default;
 // ------------------------------------------------
 
 // Font family
-$font-family-1:	Arial,Helvetica,sans-serif!default;
-$font-family-2:	'Times New Roman',serif!default;
+$font-family-1: Arial,Helvetica,sans-serif!default;
+$font-family-2: 'Times New Roman',serif!default;
 
 // Base font size
-$font-size-base:		14px!default;
-$line-height-base:	21px!default;
+$font-size-base: 14px!default;
+$line-height-base: 20px!default;
 
 // Font sizes
-$font-size-xs:			10px!default;
-$font-size-sm:			12px!default;
-$font-size-lg:			24px!default;
-$font-size-xl:			32px!default;
+$font-size-small-1: 10px!default;
+$font-size-small-2: 12px!default;
+$font-size-big-1: 30px!default;
+$font-size-big-2: 20px!default;
 
 
 // Colors 
@@ -77,11 +77,6 @@ $use-wordpress:		false!default;
 $use-buttons:			false!default;
 $use-rules:				false!default;
 $use-skip-links:		false!default;
-
-// Helpers
-$use-columns:			false!default;
-$use-fonts:				false!default;
-$use-colors:			false!default;
 
 
 // Base variables

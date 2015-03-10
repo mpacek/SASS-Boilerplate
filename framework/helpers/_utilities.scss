@@ -3,81 +3,54 @@
 // ------------------------------------------------ //
 
 
-// Clearfix
+// Links
 // ------------------------------------------------
 
-.cf {
-	&:after,
-	&:before	{
-		content:"";
-		display:table;
-		clear:both;
-	}
+// image link
+%u-link--image {
+	display:block;
+	overflow:hidden;
+	line-height:0;
 }
 
 
-// Fonts
+// Text
 // ------------------------------------------------
-@if $use-fonts == true {
 
-.u-font {
-	&-xs 		{ font-size:$font-size-xs; }
-	&-sm 		{ font-size:$font-size-sm; }
-	&-md 		{ font-size:$font-size-base; }
-	&-lg 		{ font-size:$font-size-lg; }
-	&-xl 		{ font-size:$font-size-xl; }
+// Accessibility hidden elements
+%u-visuallyhidden {
+	@include accessibility;
 }
 
-} //endif
 
-
-// Colors
+// Layout
 // ------------------------------------------------
-@if $use-colors == true {
 
-.u-color {
-	&-black 			{ color:$color-black; }
-	&-white 			{ color:$color-white; }
-	&-base 			{ color:$color-base; }
-	&-link 			{ color:$color-link; }
-	&-gray 			{ color:$color-gray; }
-	&-grayLight 	{ color:$color-gray-light; }
-	&-grayDark 		{ color:$color-gray-dark; }
+// Box sisizng
+%u-box-sizing--border {
+	@include box-sizing(border-box);
 }
-
-} //endif
-
-
-// Text columns
-// ------------------------------------------------
-@if $use-columns == true {
-
-%text-cols {
-	@include vendor(column-gap, $base-spacing);
+%u-box-sizing--content {
+	@include box-sizing(content-box);
 }
-.u-text-cols {
-	&-2    { @extend %text-cols; @include vendor(column-count, 2); }
-	&-3    { @extend %text-cols; @include vendor(column-count, 3); }
-	&-4    { @extend %text-cols; @include vendor(column-count, 4); }
-	&-5    { @extend %text-cols; @include vendor(column-count, 5); }
-}
-
-} //endif
 
 
 // Resposnive hidden content
 // ------------------------------------------------
 
 @if $use-responsive  == true {
-
+	
+	@include media-query(desktop) { 
+		.u-hidden--desktop { display:none }
+	}
 	@include media-query(table) { 
-		.u-hidden-md { display:none }
+		.u-hidden--tablet { display:none }
 	}
 	@include media-query(smartphone) {  
-		.u-hidden-sm { display:none }
+		.u-hidden--smartphone { display:none }
 	}
 	@include media-query(phone) { 
-		.u-hidden-xs { display:none }
+		.u-hidden--phone { display:none }
 	}
 	
 } //endif

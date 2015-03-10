@@ -13,7 +13,7 @@
 }
 
 // Accessibility
-@mixin accessibility{
+@mixin accessibility {
 	width:1px!important; height:1px!important; padding:0!important; margin:-1px!important;
 	clip:rect(0 0 0 0)!important;
 	border:0!important;
@@ -166,7 +166,7 @@ $breakpoint-tablet-end: $breakpoint-desktop-start - 1px;
 	@-o-keyframes $animation-name {
 		@content;
 	}
-	@keyframes $animation-name{
+	@keyframes $animation-name {
 		@content;
 	}
 }
