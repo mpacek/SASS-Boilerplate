@@ -1,0 +1,45 @@
+// ------------------------------------------------
+// Main
+// ------------------------------------------------ //
+
+html {
+	font:#{($font-size--base/16px)*1em}/#{$line-height--ratio} $font-family--1;
+}
+a {
+	color:$color--link;
+	&:visited {
+		color:darken($color--link,10%);
+	}
+	&:active,
+	&:hover {
+		color:lighten($color--link,10%);
+		text-decoration:none; 
+	}
+}
+
+@if $use-border-focus  == true {
+
+	// focus
+	%s-focus,
+	a:focus, 
+	a:focus + label, 
+	button:focus, 
+	button:focus + label, 
+	input:focus, 
+	input:focus + label, 
+	select:focus, 
+	select:focus + label, 
+	textarea:focus, 
+	textarea:focus + label {
+		-webkit-box-shadow:0 0 0 2px $color--focus-1;
+		-webkit-box-shadow:0 0 0 1px $color--focus-1, 0 0 0 2px $color--focus-2;
+		box-shadow:0 0 0 2px $color--focus-1;
+		box-shadow:0 0 0 1px $color--focus-1, 0 0 0 2px $color--focus-2;
+		outline:0 none;
+	}
+	
+} //endif
+
+// text selection
+::selection 		{ background:$color-selection--background; color:$color-selection--text; }
+::-moz-selection 	{ background:$color-selection--background; color:$color-selection--text; }

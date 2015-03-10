@@ -22,11 +22,11 @@
 // Base
 @import "base/normalize";
 @import "base/reset";
-@import "base/print";
-@import "base/main";
+@import "base/general";
 @import "base/layout"; 
 @import "base/margins";
 @import "base/wordpress";
+@import "base/print";
 
 // Components
 @import "components/images";

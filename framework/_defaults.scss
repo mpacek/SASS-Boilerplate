@@ -38,6 +38,8 @@ $grid-cols--phone: 6!default;
 // Text
 // ------------------------------------------------
 
+$use-border-focus: false!default;
+
 // Font family
 $font-family--1: Arial,Helvetica,sans-serif!default;
 $font-family--2: 'Times New Roman',serif!default;
@@ -56,21 +58,25 @@ $font-size--large-2: 20px!default;
 // Colors 
 // ------------------------------------------------
 
-$color-black:			#000!default;
-$color-white:			#fff!default;
+$color--black: #000!default;
+$color--white: #fff!default;
 
-$color-base:			#000!default;
-$color-brand:			#000!default;
-$color-link:			#ffff00!default;
-$color-ui:				#ccc!default;
+$color--text: #000!default;
+$color--link: #ffff00!default;
+$color--ui: #ccc!default;
+$color--brand: #000!default;
 
-$color-gray:			#999!default;
-$color-gray-light:	#ccc!default;
-$color-gray-dark:		#666!default;
+$color--gray: #999!default;
+$color--gray-light: #ccc!default;
+$color--gray-dark: #666!default;
 
 // Selection
-$color-selection--background:	$color-gray!default;
-$color-selection--text:			$color-white!default;
+$color-selection--background: $color-gray!default;
+$color-selection--text: $color-white!default;
+
+// Focus
+$color--focus-1: #99ccff;
+$color--focus-2: #6699ff;
 
 
 // Additional elements
