@@ -7,21 +7,18 @@
 // ------------------------------------------------
 
 // Font-size
-@mixin font-size($font-size, $line-height:false) {
+@mixin font-size($font-size) {
 	font-size:$font-size;
-	font-size:($font-size / $font-size--base)*1rem;
-	@if $line-height == true {
-		line-height:ceil($font-size / $line-height-base) * ($line-height-base / $font-size);
-	}
+	font-size:($font-size / $font-size-base)*1rem;
 }
 
 // Accessibility
 @mixin accessibility{
-    width:1px!important; height:1px!important; padding:0!important; margin:-1px!important;
+	width:1px!important; height:1px!important; padding:0!important; margin:-1px!important;
 	clip:rect(0 0 0 0)!important;
-    border:0!important;
+	border:0!important;
 	overflow:hidden!important;
-    position: absolute!important;
+	position: absolute!important;
 }
 
 
@@ -32,10 +29,10 @@
 @mixin column($number,$gap) {
 	-moz-column-count:$number;
 	-webkit-column-count:$number;
-    column-count:$number;
-    -moz-column-gap:$gap;
-    -webkit-column-gap:$gap;
-    column-gap:$gap;
+	column-count:$number;
+	-moz-column-gap:$gap;
+	-webkit-column-gap:$gap;
+	column-gap:$gap;
 }
 
 
@@ -72,7 +69,7 @@
 	}
 }
 
-// Calculate widths, or offset
+// Calculate columns width, or offset
 @mixin grid-calc($index, $grid-columns, $namespace, $type) {
 	@if ($type == width) {
 		.l-col#{$namespace}-#{$index} {
@@ -93,8 +90,8 @@
 // Media query
 // Using: @include media-query(table){ [styles] }
 // 
-// Breakpoints defined in _defaults / _config
-// Mixins value: phone, smartphone, tablet, desk
+// Breakpoints defined in _config
+// Mixins value: phone, smartphone, tablet, desktop
 
 $breakpoint-phone-end: $breakpoint-smartphone-start - 1px;
 $breakpoint-smartphone-end: $breakpoint-tablet-start - 1px;
