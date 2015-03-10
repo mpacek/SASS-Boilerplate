@@ -1,10 +1,11 @@
 @if $use-wordpress == true {
+
 // ------------------------------------------------
 // Wordpress default styles
 // ------------------------------------------------ //
 
 // Images align
-.alignleft{
+.alignleft {
 	margin-right:$base-spacing; margin-bottom:$base-spacing / 2;
 	float:left;
 }

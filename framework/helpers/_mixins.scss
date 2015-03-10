@@ -15,9 +15,32 @@
 	}
 }
 
+// Accessibility
+@mixin accessibility{
+    width:1px!important; height:1px!important; padding:0!important; margin:-1px!important;
+	clip:rect(0 0 0 0)!important;
+    border:0!important;
+	overflow:hidden!important;
+    position: absolute!important;
+}
+
+
+// Layout
+// ------------------------------------------------
+
+// Column
+@mixin column($number,$gap) {
+	-moz-column-count:$number;
+	-webkit-column-count:$number;
+    column-count:$number;
+    -moz-column-gap:$gap;
+    -webkit-column-gap:$gap;
+    column-gap:$gap;
+}
+
 
 // Boxes
-// ---------------------------------------
+// ------------------------------------------------
 
 // Box sizing
 @mixin box-sizing($type) {
@@ -38,27 +61,71 @@
 	box-shadow:$type;
 }
 
-// Media query for retina devices
-@mixin retina {
-	@media print,
-	(-webkit-min-device-pixel-ratio:1.25),
-	(-o-min-device-pixel-ratio:5/4),
-	(min-resolution:120dpi){
-		@content;
+
+// Grid
+// ------------------------------------------------
+
+// Grid setup loop
+@mixin grid-setup($grid-columns, $namespace, $type) {
+	@for $i from 1 through $grid-columns {
+		@include grid-calc($i, $grid-columns, $namespace, $type);
+	}
+}
+
+// Calculate widths, or offset
+@mixin grid-calc($index, $grid-columns, $namespace, $type) {
+	@if ($type == width) {
+		.l-col#{$namespace}-#{$index} {
+			width: percentage(($index / $grid-columns));
+		}
+	}
+	@if ($type == offset) {
+		.l-col#{$namespace}--offset-#{$index} {
+			margin-left: percentage(($index / $grid-columns));
+		}
+	}
+}
+
+
+// Responsive
+// ------------------------------------------------
+
+// Media query
+// Using: @include media-query(table){ [styles] }
+// 
+// Breakpoints defined in _defaults / _config
+// Mixins value: phone, smartphone, tablet, desk
+
+$breakpoint-phone-end: $breakpoint-smartphone-start - 1px;
+$breakpoint-smartphone-end: $breakpoint-tablet-start - 1px;
+$breakpoint-tablet-end: $breakpoint-desktop-start - 1px;
+
+@mixin media-query($media-query) {
+	@if $media-query == phone {
+		@media only screen and ( max-width:$breakpoint-phone-end ) { @content; }
+	}
+	@if $media-query == smartphone {
+		@media only screen and ( max-width:$breakpoint-smartphone-end ) { @content; }
+	}
+	@if $media-query == tablet {
+		@media only screen and ( max-width:$breakpoint-tablet-end ) { @content; }
+	}
+	@if $media-query == desktop {
+		@media only screen and ( min-width:$breakpoint-desktop-start ) { @content; }
 	}
 }
 
 
 // CSS3
-// ------------------------------------------------ 
+// ------------------------------------------------
 
 // Vendor
 @mixin vendor($property,$value) {
 	-webkit-#{$property}:$value;
-		-moz-#{$property}:$value;
-		 -ms-#{$property}:$value;
-		  -o-#{$property}:$value;
-			  #{$property}:$value;
+	-moz-#{$property}:$value;
+	-ms-#{$property}:$value;
+	-o-#{$property}:$value;
+	#{$property}:$value;
 }
 
 // Transform
@@ -104,56 +171,5 @@
 	}
 	@keyframes $animation-name{
 		@content;
-	}
-}
-
-
-// Grid
-// ------------------------------------------------
-
-// Grid setup loop
-@mixin grid-setup($grid-columns, $namespace, $type) {
-	@for $i from 1 through $grid-columns {
-		@include grid-calc($i, $grid-columns, $namespace, $type);
-	}
-}
-
-// Calculate widths, or offset
-@mixin grid-calc($index, $grid-columns, $namespace, $type) {
-	@if ($type == width) {
-		.l-col-#{$namespace}-#{$index} {
-			width: percentage(($index / $grid-columns));
-		}
-	}
-	@if ($type == offset) {
-		.l-col-#{$namespace}-offset-#{$index} {
-			margin-left: percentage(($index / $grid-columns));
-		}
-	}
-}
-
-
-// Responsive
-// ------------------------------------------------
-
-// Media query
-// Using: @include media-query(table){ [styles] }
-
-$layout-phone-end: $layout-smartphone-start - 1px;
-$layout-smartphone-end: $layout-table-start - 1px;
-$layout-table-end: $layout-desktop-start - 1px;
-
-@mixin media-query($media-query) {
-	@if $media-query == phone {
-		@media only screen and (max-width:$layout-phone-end) { @content; }
-	}
-	@if $media-query == smartphone {
-		@media only screen and (max-width:$layout-smartphone-end) { @content; }
-	}
-	@if $media-query == table {
-		@media only screen and (max-width:$layout-table-end) { @content; }
-	}
-	@if $media-query == desktop {
-		@media only screen and (min-width:$layout-desktop-start) { @content; }
 	}
 }

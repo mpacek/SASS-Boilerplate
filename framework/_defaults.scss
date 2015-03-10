@@ -3,14 +3,16 @@
 // ------------------------------------------------ //
 
 
-// Global settings
+// Responsive
 // ------------------------------------------------
 
-// Resposive
-$use-responsive:		false!default;
+$use-responsive: false!default;
 
-// Global border box
-$global-border-box:	false!default;
+// Breakpoints
+$breakpoint-desktop-start: 1160px!default;
+$breakpoint-tablet-start: 720px!default;
+$breakpoint-smartphone-start: 580px!default;
+
 
 // Grid
 // ------------------------------------------------
@@ -25,15 +27,6 @@ $grid-cols-xs:			4!default;
 $grid-cols-sm:			6!default;
 $grid-cols-md:			8!default;
 $grid-cols-lg:			12!default;
-
-   
-// Layout
-// ------------------------------------------------
-
-// Breakpoints | responsive
-$layout-desktop-start:		1160px!default;
-$layout-table-start:			720px!default;
-$layout-smartphone-start:	480px!default;
 
    
 // Text

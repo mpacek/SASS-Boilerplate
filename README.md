@@ -1,4 +1,4 @@
-# SASS/CSS Framework v1.0.3
+# SASS/CSS Framework v1.0.4
 
 Sass based, Object Oriented CSS framework. 
 
@@ -37,12 +37,12 @@ Sass based, Object Oriented CSS framework.
 
 **Comments:**
 
-	// --------------------------------------------------------
+	// ------------------------------------------------
 	// Section comment block 
-	// -------------------------------------------------------- //
+	// ------------------------------------------------ //
 	
 	// Sub-section comment block
-	// --------------------------------------------------------
+	// ------------------------------------------------
 	
 	// Group comment block.
 	// Ideal for multi-line 

@@ -1,17 +1,17 @@
 /*
 Error: Undefined variable: "$base-spacing--half".
-        on line 35 of D:/Developer/GitHub/framework/framework/components/_tables.scss, in `@content'
-        from line 148 of D:/Developer/GitHub/framework/framework/helpers/_mixins.scss, in `media-query'
-        from line 34 of D:/Developer/GitHub/framework/framework/components/_tables.scss
-        from line 34 of D:/Developer/GitHub/framework/framework/_framework.scss
-        from line 8 of D:\Developer\GitHub\framework\style.scss
+        on line 35 of D:/Github/framework/framework/components/_tables.scss, in `@content'
+        from line 148 of D:/Github/framework/framework/helpers/_mixins.scss, in `media-query'
+        from line 34 of D:/Github/framework/framework/components/_tables.scss
+        from line 34 of D:/Github/framework/framework/_framework.scss
+        from line 7 of D:\Github\framework\style.scss
 
 Backtrace:
-D:/Developer/GitHub/framework/framework/components/_tables.scss:35:in `@content'
-D:/Developer/GitHub/framework/framework/helpers/_mixins.scss:148:in `media-query'
-D:/Developer/GitHub/framework/framework/components/_tables.scss:34
-D:/Developer/GitHub/framework/framework/_framework.scss:34
-D:\Developer\GitHub\framework\style.scss:8
+D:/Github/framework/framework/components/_tables.scss:35:in `@content'
+D:/Github/framework/framework/helpers/_mixins.scss:148:in `media-query'
+D:/Github/framework/framework/components/_tables.scss:34
+D:/Github/framework/framework/_framework.scss:34
+D:\Github\framework\style.scss:7
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -127,9 +127,10 @@ C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/bas
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:20:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:268:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:404:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
@@ -140,4 +141,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$base-spacing--half\".\A         on line 35 of D:/Developer/GitHub/framework/framework/components/_tables.scss, in `@content'\A         from line 148 of D:/Developer/GitHub/framework/framework/helpers/_mixins.scss, in `media-query'\A         from line 34 of D:/Developer/GitHub/framework/framework/components/_tables.scss\A         from line 34 of D:/Developer/GitHub/framework/framework/_framework.scss\A         from line 8 of D:\Developer\GitHub\framework\style.scss"; }
+  content: "Error: Undefined variable: \"$base-spacing--half\".\A         on line 35 of D:/Github/framework/framework/components/_tables.scss, in `@content'\A         from line 148 of D:/Github/framework/framework/helpers/_mixins.scss, in `media-query'\A         from line 34 of D:/Github/framework/framework/components/_tables.scss\A         from line 34 of D:/Github/framework/framework/_framework.scss\A         from line 7 of D:\Github\framework\style.scss"; }

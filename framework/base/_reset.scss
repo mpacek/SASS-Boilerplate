@@ -2,15 +2,6 @@
 // Reset
 // ------------------------------------------------ //
 
-@if $global-border-box == true {
-	* {
-		&,
-		&:before,
-		&:after {
-			@include box-sizing(border-box);
-		}
-	}
-}
 
 // Elements
 h1,h2,h3,h4,h5,h6,
@@ -28,6 +19,21 @@ abbr[title],dfn[title] {
 }
 
 // Remove underline
-u,ins{
+u,ins {
 	text-decoration:none;
+}
+
+// Italic alt text
+img {
+    font-style:italic;
+}
+
+// Form cursors
+label,
+input,
+textarea,
+button,
+select,
+option {
+    cursor:pointer;
 }
