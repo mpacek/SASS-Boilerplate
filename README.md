@@ -10,8 +10,8 @@ Sass based, Object Oriented CSS framework.
 
 ## Requirements
 
-**Sass 3.3**
-**BEM naming convention**  
+* Sass 3.3
+* BEM naming convention
 
 ## Getting started
 
