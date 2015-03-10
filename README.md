@@ -15,7 +15,7 @@ Sass based, Object Oriented CSS framework.
 
 ## Getting started
 
-**Sass files structure:**
+**Files structure:**
 
 	framework/
 		helpers/
@@ -30,12 +30,12 @@ Sass based, Object Oriented CSS framework.
 * defaults - default configuration, colors, sizes, etc.
 * framework - base sass file
 
-**Classes**
+**Classes:**
 
 * l- (layout)
 * u- (utilities)
 
-**Sass Comments**
+**Comments:**
 
 // --------------------------------------------------------
 // Section comment block
