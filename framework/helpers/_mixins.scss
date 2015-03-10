@@ -9,7 +9,7 @@
 // Font-size
 @mixin font-size($font-size) {
 	font-size:$font-size;
-	font-size:($font-size / $font-size-base)*1rem;
+	font-size:($font-size / $font-size--base)*1rem;
 }
 
 // Accessibility
@@ -93,22 +93,22 @@
 // Breakpoints defined in _config
 // Mixins value: phone, smartphone, tablet, desktop
 
-$breakpoint-phone-end: $breakpoint-smartphone-start - 1px;
-$breakpoint-smartphone-end: $breakpoint-tablet-start - 1px;
-$breakpoint-tablet-end: $breakpoint-desktop-start - 1px;
+$breakpoint-end--phone: $breakpoint-start--smartphone - 1px;
+$breakpoint-end--smartphone: $breakpoint-start--tablet - 1px;
+$breakpoint-end--tablet: $breakpoint-start--desktopt - 1px;
 
 @mixin media-query($media-query) {
 	@if $media-query == phone {
-		@media only screen and ( max-width:$breakpoint-phone-end ) { @content; }
+		@media only screen and ( max-width:$breakpoint-end--phone ) { @content; }
 	}
 	@if $media-query == smartphone {
-		@media only screen and ( max-width:$breakpoint-smartphone-end ) { @content; }
+		@media only screen and ( max-width:$breakpoint-end--smartphone ) { @content; }
 	}
 	@if $media-query == tablet {
-		@media only screen and ( max-width:$breakpoint-tablet-end ) { @content; }
+		@media only screen and ( max-width:$breakpoint-end--tablet ) { @content; }
 	}
 	@if $media-query == desktop {
-		@media only screen and ( min-width:$breakpoint-desktop-start ) { @content; }
+		@media only screen and ( min-width:$breakpoint-start--desktopt ) { @content; }
 	}
 }
 

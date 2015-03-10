@@ -3,48 +3,54 @@
 // ------------------------------------------------ //
 
 
+// Layout
+// ------------------------------------------------
+
+$layout-spacing: 20px!default;
+$breakpoint-start--desktop: 1160px!default;
+
+
 // Responsive
 // ------------------------------------------------
 
 $use-responsive: false!default;
 
 // Breakpoints
-$breakpoint-desktop-start: 1160px!default;
-$breakpoint-tablet-start: 720px!default;
-$breakpoint-smartphone-start: 580px!default;
+$breakpoint-start--tablet: 720px!default;
+$breakpoint-start--smartphone: 580px!default;
 
 
 // Grid
 // ------------------------------------------------
 
-$use-grid:				false!default;
+$use-grid: false!default;
 
 // Grid gutter
-$grid-gutter: 			0!default;
+$grid-gutter: 0!default;
 
 // Grid columns | responsive
-$grid-cols-xs:			4!default;
-$grid-cols-sm:			6!default;
-$grid-cols-md:			8!default;
-$grid-cols-lg:			12!default;
+$grid-cols--desktop: 6!default;
+$grid-cols--table: 6!default;
+$grid-cols--smartphone: 6!default;
+$grid-cols--phone: 6!default;
 
-   
+
 // Text
 // ------------------------------------------------
 
 // Font family
-$font-family-1: Arial,Helvetica,sans-serif!default;
-$font-family-2: 'Times New Roman',serif!default;
+$font-family--1: Arial,Helvetica,sans-serif!default;
+$font-family--2: 'Times New Roman',serif!default;
 
 // Base font size
-$font-size-base: 14px!default;
-$line-height-base: 20px!default;
+$font-size--base: 14px!default;
+$line-height--base: 20px!default;
 
 // Font sizes
-$font-size-small-1: 10px!default;
-$font-size-small-2: 12px!default;
-$font-size-big-1: 30px!default;
-$font-size-big-2: 20px!default;
+$font-size--small-1: 10px!default;
+$font-size--small-2: 12px!default;
+$font-size--large-1: 30px!default;
+$font-size--large-2: 20px!default;
 
 
 // Colors 
@@ -82,9 +88,10 @@ $use-skip-links:		false!default;
 // Base variables
 // ------------------------------------------------
 
-$base-spacing:				$line-height-base!default;
-$base-spacing-half:		$base-spacing / 2!default;
-$base-spacing-double:	$base-spacing * 2!default;
-$line-height-ratio:		$line-height-base / $font-size-base;
-$grid-gutter-half:		$layout-gutter / 2!default;
-$grid-gutter-double:		$layout-gutter * 2!default;
+$line-height--ratio: $line-height--base / $font-size--base;
+
+$layout-spacing--half: $layout-spacing / 2!default;
+$layout-spacing--double: $layout-spacing * 2!default;
+
+$grid-gutter--half: $layout-gutter / 2!default;
+$grid-gutter--double: $layout-gutter * 2!default;

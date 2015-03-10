@@ -5,64 +5,85 @@
 
 // Container
 .l-container {
-	width:$layout-desktop-start + $grid-gutter; 
-	margin-left:auto; margin-right:auto; 
-	padding-left:$grid-gutter-half; padding-right:$grid-gutter-half;
+	width:$breakpoint-start--desktop; margin-left:auto; margin-right:auto; padding:0 $grid-gutter;
 	@extend .cf;
-	@if $global-border-box == false { @include box-sizing(border-box); } // box sizing
+	@extend %u-box-sizing--border;
 	
-	@include media-query(table){ 
-		width:100%;
-	}
+	@if $use-responsive  == true {
+
+		@include media-query(tablet){ 
+			width:100%; padding:0 $grid-gutter;
+		}
+		@include media-query(smartphone){ 
+			padding:0 $grid-gutter--half;
+		}
+		
+	} //endif
 	
-	// fluid
-	&--fluid {
-		width:100%;
-		padding-left:$grid-gutter-half; padding-right:$grid-gutter-half;
-	}
+}
+.l-container-fluid {
+	width:100%; margin-left:0; margin-right:0; padding:0 $grid-gutter--half;
+	@extend .cf;
+	@extend %u-box-sizing--border;
 }
 
 // Grid
 @if $use-grid == true {
 	
-	// grid float
+	// Grid float
 	.l-row {
-		margin-left:- $grid-gutter-half; margin-right:- $grid-gutter-half;
+		margin-left:- $grid-gutter--half; margin-right:- $grid-gutter--half; padding:0;
 		display:block;
 		@extend .cf;
-		@if $global-border-box == false { @include box-sizing(border-box); } // box sizing
+		@extend %u-box-sizing--border;
 	}
 	.l-col {
-		padding:0 $grid-gutter-half;
+		padding:0 $grid-gutter--half;
 		position:relative;
 		float:left;
-		@if $global-border-box == false { @include box-sizing(border-box); } // box sizing
+		@extend %u-box-sizing--border;
+	}
+	// column inside other column
+	.l-col--row {
+		padding-left:0; padding-right:0;
+	}
+
+	// Grid inline
+	.l-row-inline {
+		@exted .l-row;
+		position:relative; left:4px;
+	}
+	.l-col-inline {
+		padding:0 $grid-gutter--half; margin:0 -4px;  // inline-block space fix
+		display:inline-block;
+		vertical-align:top;
+		@extend %u-box-sizing--border;
 	}
 
 	// Setup grid
-	@include grid-setup($grid-cols-lg,'',width);
-	@include grid-setup($grid-cols-lg,'',offset);
+	@include grid-setup($grid-cols--desktop,'',width);
+	@include grid-setup($grid-cols--desktop,'',offset);
 
 	// Resposnive
 	//
 	// Usage:
 	// <ul class="row">
-	//		<li class-"l-col l-col-2 l-col-sm-4 l-col-offset-2"></li>
-	//		<li class-"l-col l-col-4 l-col-xs-2"></li>
+	//		<li class-"l-col l-col-2 l-col-s-4 l-col-offset-2"></li>
+	//		<li class-"l-col l-col-4 l-col-m-2"></li>
 	// <ul>
 	@if $use-responsive  == true {
 
-		@include media-query(table) { 
-			@include grid-setup($grid-cols-md,-md,width);
-			@include grid-setup($grid-cols-md,-md,offset);
+		@include media-query(tablet) { 
+			@include grid-setup($grid-cols--tablet,-l,width);
+			@include grid-setup($grid-cols--tablet,-l,offset);
 		}
 		@include media-query(smartphone) {  
-			@include grid-setup($grid-cols-sm,-sm,width);
-			@include grid-setup($grid-cols-sm,-sm,offset);
+			@include grid-setup($grid-cols--smartphone,-m,width);
+			@include grid-setup($grid-cols--smartphone,-m,offset);
 		}
 		@include media-query(phone) { 
-			@include grid-setup($grid-cols-xs,-xs,width);
-			@include grid-setup($grid-cols-xs,-xs,offset);
+			@include grid-setup($grid-cols--phone,-s,width);
+			@include grid-setup($grid-cols--phone,-s,offset);
 		}
 		
 	} //endif
