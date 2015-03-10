@@ -38,7 +38,7 @@ Sass based, Object Oriented CSS framework.
 **Comments:**
 
 // --------------------------------------------------------
-// Section comment block
+// Section comment block 
 // -------------------------------------------------------- //
  
 // Group comment block.
