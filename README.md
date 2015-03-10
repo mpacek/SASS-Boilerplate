@@ -29,6 +29,27 @@ Sass based, Object Oriented CSS framework.
 * defaults - default configuration, colors, sizes, etc.
 * framework - base sass file
 
+### Requirements
+
+* Sass 3.2
+* BEM naming convention  
+* Class prefixes: l- (layout), u- (utilities)
+
+### Sass Comments
+
+// --------------------------------------------------------
+// Section comment block
+// -------------------------------------------------------- //
+ 
+// Group comment block.
+// Ideal for multi-line 
+// explanations and documentation.
+ 
+// Sub-section comment block
+// --------------------------------------------------------
+ 
+// Basic comment
+
 ## License
 
 Copyright 2014 Michał Pacek
