@@ -40,14 +40,14 @@ Sass based, Object Oriented CSS framework.
 	// --------------------------------------------------------
 	// Section comment block 
 	// -------------------------------------------------------- //
- 
+	
+	// Sub-section comment block
+	// --------------------------------------------------------
+	
 	// Group comment block.
 	// Ideal for multi-line 
 	// explanations and documentation.
- 
-	// Sub-section comment block
-	// --------------------------------------------------------
- 
+
 	// Basic comment
 
 ## License
