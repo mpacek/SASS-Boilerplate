@@ -7,7 +7,7 @@
 // ------------------------------------------------
 
 $layout-spacing: 20px!default;
-$breakpoint-start--desktop: 1160px!default;
+$layout-width: 1160px!default;
 
 
 // Responsive
@@ -16,6 +16,7 @@ $breakpoint-start--desktop: 1160px!default;
 $use-responsive: false!default;
 
 // Breakpoints
+$breakpoint-start--desktop: $layout-width;
 $breakpoint-start--tablet: 720px!default;
 $breakpoint-start--smartphone: 580px!default;
 
@@ -71,8 +72,8 @@ $color--gray-light: #ccc!default;
 $color--gray-dark: #666!default;
 
 // Selection
-$color-selection--background: $color-gray!default;
-$color-selection--text: $color-white!default;
+$color--selection-background: $color-gray!default;
+$color--selection-text: $color-white!default;
 
 // Focus
 $color--focus-1: #99ccff;

@@ -41,5 +41,9 @@ a {
 } //endif
 
 // text selection
-::selection 		{ background:$color-selection--background; color:$color-selection--text; }
-::-moz-selection 	{ background:$color-selection--background; color:$color-selection--text; }
+::selection { 
+	background:$color--selection-background; color:$color--selection-text; 
+}
+::-moz-selection { 
+	background:$color--selection-background; color:$color--selection-text; 
+}
