@@ -11,10 +11,10 @@
 	
 	@if $use-responsive  == true {
 
-		@include media-query(tablet){ 
+		@include media-query(tablet) { 
 			width:100%; padding:0 $grid-gutter;
 		}
-		@include media-query(smartphone){ 
+		@include media-query(smartphone) { 
 			padding:0 $grid-gutter--half;
 		}
 		
