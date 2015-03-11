@@ -2,12 +2,6 @@
 
 Sass based, Object Oriented CSS framework. 
 
-**Inspired by:**
-
-* [github.com/inuitcss](https://github.com/inuitcss)
-* [getbootstrap.com](http://getbootstrap.com/)
-* [purecss.io](http://purecss.io/)
-
 ## Requirements
 
 * Sass 3.3
@@ -51,6 +45,12 @@ Sass based, Object Oriented CSS framework.
 	// Basic comment
 
 ## License
+
+**Inspired by:**
+
+* [github.com/inuitcss](https://github.com/inuitcss)
+* [getbootstrap.com](http://getbootstrap.com/)
+* [purecss.io](http://purecss.io/)
 
 Copyright 2014 Michał Pacek
 
