@@ -1,6 +1,6 @@
 # SASS/CSS Framework v1.0.4
 
-Sass based, Object Oriented CSS framework. 
+Sass based, Object Oriented SASS framework. 
 
 ## Requirements
 
