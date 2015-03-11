@@ -26,7 +26,7 @@
 // Layout
 // ------------------------------------------------
 
-// Box sizing
+// Box sisizng
 %u-box-sizing--border {
 	@include box-sizing(border-box);
 }
@@ -35,7 +35,7 @@
 }
 
 
-// Responsive hidden content
+// Resposnive hidden content
 // ------------------------------------------------
 
 @if $use-responsive  == true {
