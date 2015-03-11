@@ -6,21 +6,21 @@
 
 // Images align
 .alignleft {
-	margin-right:$base-spacing; margin-bottom:$base-spacing / 2;
+	margin-right:$layout-spacing; margin-bottom:$layout-spacing--half;
 	float:left;
 }
 .alignright {
-	margin-left:$base-spacing; margin-bottom:$base-spacing / 2;
+	margin-left:$layout-spacing; margin-bottom:$layout-spacing--half;
 	float:right;
 }
 .aligncenter {
-	margin-right:auto; margin-left:auto; margin-bottom:$base-spacing;
+	margin-right:auto; margin-left:auto; margin-bottom:$layout-spacing;
 	display:block;
 }
 
 // Caption
 .wp-caption {
-	max-width:100%; margin-bottom:$base-spacing;
+	max-width:100%; margin-bottom:$layout-spacing;
 	img {
 		display:block;
 	}
