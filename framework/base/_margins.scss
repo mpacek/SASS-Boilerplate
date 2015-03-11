@@ -5,10 +5,9 @@
 // base elements margin
 h1,h2,h3,h4,h5,h6,hgroup,
 ul,ol,dl,
-blockquote,p,address,
+pre,blockquote,p,address,
 table,
-fieldset,figure,
-pre {
+fieldset,figure {
 	margin-bottom:$layout-spacing;
 }
 

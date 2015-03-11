@@ -1,4 +1,5 @@
 @if $use-skip-links == true {
+
 // --------------------------------------------------------
 // Skip Links | accessibility
 // -------------------------------------------------------- //
@@ -9,10 +10,10 @@
 	position:absolute; left:-10000px; top:auto;
 	&:active,
 	&:focus {
-		width:auto; height:auto; padding:($layout-gutter-half / 2) $layout-gutter-half;
-		background-color:$color-black; color:$color-white;
+		width:auto; height:auto; padding:($grid-gutter--half / 2) $grid-gutter--half;
+		background-color:$color--black; color:$color--white;
 		left:0; z-index:10;
-		font-size:$base-font-size + 2; font-weight:bold;
+		font-size:$font-size--base; font-weight:bold;
 	}
 }
 

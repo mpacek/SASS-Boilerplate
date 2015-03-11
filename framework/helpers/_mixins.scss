@@ -95,7 +95,7 @@
 
 $breakpoint-end--phone: $breakpoint-start--smartphone - 1px;
 $breakpoint-end--smartphone: $breakpoint-start--tablet - 1px;
-$breakpoint-end--tablet: $breakpoint-start--desktopt - 1px;
+$breakpoint-end--tablet: $breakpoint-start--desktop - 1px;
 
 @mixin media-query($media-query) {
 	@if $media-query == phone {

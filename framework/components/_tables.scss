@@ -2,38 +2,31 @@
 // Tables
 // ------------------------------------------------ //
 
-table {
+.table {
 	width:100%;
 	// Bordered table
 	&--bordered {
 		th,
 		td {
-			border:1px solid $color-ui;
+			border:1px solid $color--ui;
 			&:empty {
 				border:none;
 			}
-		}
-		thead tr:last-child th {
-			border-bottom-width:2px;
-		}
-		tbody tr th:last-of-type {
-			border-right-width:2px;
 		}
 	}
 	// Striped table
 	&--striped {
 		tbody tr:nth-of-type(odd) {
-			background-color:#eee;
+			background-color:$color--gray-lighter;
 		}
 	}
 }
 th,
 td {
-	padding:$base-spacing / 4;
-	
+	padding:$layout-spacing--half / 2;
+	// RESPONSIVE
 	@include media-query(phone) { 
-		padding:$base-spacing--half;
-		text-align:left;
+		padding:$layout-spacing--half;
 	}
 }
 

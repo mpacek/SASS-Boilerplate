@@ -7,13 +7,13 @@ html {
 }
 a {
 	color:$color--link;
-	&:visited {
-		color:darken($color--link,10%);
-	}
 	&:active,
 	&:hover {
 		color:lighten($color--link,10%);
 		text-decoration:none; 
+	}
+	&:visited {
+		color:darken($color--link,10%);
 	}
 }
 

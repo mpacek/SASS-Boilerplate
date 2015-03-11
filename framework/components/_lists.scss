@@ -2,18 +2,16 @@
 // Lists
 // ------------------------------------------------ //
 
-li {
-	> ul,
-	> ol {
-		margin-bottom:0;
-	}
-}
-
 .list {
 	&-decimal { 
 		list-style-type:decimal; 
 	}
 	&-disc { 
 		list-style-type:disc; 
+	}
+	&-horizontal {
+		li {
+			display:inline-block;
+		}
 	}
 }

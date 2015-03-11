@@ -1,12 +1,12 @@
 @if $use-rules == true {
+
 // ------------------------------------------------
 // Rules
 // ------------------------------------------------ //
 
 .rule {
-	margin-bottom:$base-spacing - 1px;
-	margin-bottom:(($base-spacing - 1px) / $font-size-base)*1rem;
-	border:none; border-bottom:1px solid $color-ui;
+	margin-bottom:$layout-spacing - 1px;
+	border:none; border-bottom:1px solid $color--ui;
 	&--dotted {
 		border-bottom-style:dotted;
 	}

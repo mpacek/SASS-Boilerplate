@@ -1,10 +1,10 @@
-/*! SASS/CSS Framework v1.0.3 */
+/*! SASS/CSS Framework v1.1.0 */
 
 /**
  * https://github.com/mpacek/framework 
  *
  * LICENSE
- * Copyright 2014 Michał Pacek
+ * Copyright 2014 Michal Pacek
  * Licensed under the Apache License, Version 2.0.
  */
 
@@ -18,15 +18,16 @@
 // Helpers
 @import "helpers/mixins";
 @import "helpers/utilities";
+@import "helpers/clearfix";
 
 // Base
 @import "base/normalize";
 @import "base/reset";
-@import "base/general";
+@import "base/print";
+@import "base/global";
 @import "base/layout"; 
 @import "base/margins";
 @import "base/wordpress";
-@import "base/print";
 
 // Components
 @import "components/images";
@@ -34,4 +35,5 @@
 @import "components/tables";
 @import "components/buttons";
 @import "components/rules";
-@import "components/paragraphs";
+@import "components/skip-links";
+@import "components/tables";

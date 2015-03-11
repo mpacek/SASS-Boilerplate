@@ -15,16 +15,16 @@ img {
 // Image placement
 .img {
 	&-right {
-		margin-left:$base-spacing; margin-bottom:$base-spacing / 2;
+		margin-left:$layout-spacing; margin-bottom:$layout-spacing--half;
 		float:right;
 	}
 	&-left {
-		margin-right:$base-spacing; margin-bottom:$base-spacing / 2;
+		margin-right:$layout-spacing; margin-bottom:$layout-spacing--half;
 		float:left;
 	}
 	&-center {
-		margin-right:auto; margin-left:auto; margin-bottom:$base-spacing;
-		display:block;
+		margin-right:auto; margin-left:auto; margin-bottom:$layout-spacing;
+		display:table;
 	}
 }
 

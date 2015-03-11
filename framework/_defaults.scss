@@ -8,6 +8,8 @@
 
 $layout-spacing: 20px!default;
 $layout-width: 1160px!default;
+// global styles
+$border-radius: 5px!default;
 
 
 // Responsive
@@ -16,7 +18,7 @@ $layout-width: 1160px!default;
 $use-responsive: false!default;
 
 // Breakpoints
-$breakpoint-start--desktop: $layout-width;
+$breakpoint-start--desktop: $layout-width !default;
 $breakpoint-start--tablet: 720px!default;
 $breakpoint-start--smartphone: 580px!default;
 
@@ -27,7 +29,7 @@ $breakpoint-start--smartphone: 580px!default;
 $use-grid: false!default;
 
 // Grid gutter
-$grid-gutter: 0!default;
+$grid-gutter: 20px!default;
 
 // Grid columns | responsive
 $grid-cols--desktop: 6!default;
@@ -65,15 +67,16 @@ $color--white: #fff!default;
 $color--text: #000!default;
 $color--link: #ffff00!default;
 $color--ui: #ccc!default;
-$color--brand: #000!default;
 
-$color--gray: #999!default;
+$color--gray-lighter: #eee!default;
 $color--gray-light: #ccc!default;
+$color--gray: #999!default;
 $color--gray-dark: #666!default;
+$color--gray-darker: #444!default;
 
 // Selection
-$color--selection-background: $color-gray!default;
-$color--selection-text: $color-white!default;
+$color--selection-background: $color--gray!default;
+$color--selection-text: $color--white!default;
 
 // Focus
 $color--focus-1: #99ccff;
@@ -84,21 +87,21 @@ $color--focus-2: #6699ff;
 // ------------------------------------------------
 
 // Base
-$use-wordpress:		false!default;
+$use-wordpress: false!default;
 
 // Components
-$use-buttons:			false!default;
-$use-rules:				false!default;
-$use-skip-links:		false!default;
+$use-buttons: false!default;
+$use-rules: false!default;
+$use-skip-links: false!default;
 
 
 // Base variables
 // ------------------------------------------------
 
 $line-height--ratio: $line-height--base / $font-size--base;
-
+// Layout spacing
 $layout-spacing--half: $layout-spacing / 2!default;
 $layout-spacing--double: $layout-spacing * 2!default;
-
-$grid-gutter--half: $layout-gutter / 2!default;
-$grid-gutter--double: $layout-gutter * 2!default;
+// Grid spacing
+$grid-gutter--half: $grid-gutter / 2!default;
+$grid-gutter--double: $grid-gutter * 2!default;

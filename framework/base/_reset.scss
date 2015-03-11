@@ -2,38 +2,32 @@
 // Reset
 // ------------------------------------------------ //
 
-
-// Elements
-h1,h2,h3,h4,h5,h6,
-p,blockquote,pre,
-dl,dd,ol,ul,
-form,fieldset,legend,
+// elements
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dl,dd,
+pre,blockquote,p,address,
 table,th,td,caption,
+form,fieldset,legend,
 hr {
 	margin:0; padding:0;
 }
 
-// Extra cursor
+// extra cursor
 abbr[title],dfn[title] {
 	cursor:help;
 }
 
-// Remove underline
+// remove underline
 u,ins {
 	text-decoration:none;
 }
 
-// Italic alt text
-img {
-    font-style:italic;
-}
-
-// Form cursors
+// form cursors
 label,
 input,
 textarea,
 button,
 select,
 option {
-    cursor:pointer;
+	cursor:pointer;
 }
