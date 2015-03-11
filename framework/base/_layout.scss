@@ -50,7 +50,7 @@
 
 	// Grid inline
 	.l-row-inline {
-		@exted .l-row;
+		@extend .l-row;
 		position:relative; left:4px;
 	}
 	.l-col-inline {
