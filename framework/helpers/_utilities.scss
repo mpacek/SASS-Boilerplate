@@ -3,6 +3,18 @@
 // ------------------------------------------------ //
 
 
+// Clearfix
+// ------------------------------------------------
+.u-clearfix,
+%u-clearfix {
+	&:after {
+		content:"";
+		display:table;
+		clear:both;
+	}
+}
+
+
 // Links
 // ------------------------------------------------
 
@@ -32,6 +44,34 @@
 }
 %u-box-sizing--content {
 	@include box-sizing(content-box);
+}
+
+// Margin bottom
+.u-spacing,
+%u-spacing {
+    margin-bottom:$layout-spacing;
+}
+.u-spacing--half,
+%u-spacing--half {
+    margin-bottom:$layout-spacing--half;
+}
+.u-spacing--double,
+%u-spacing--double {
+    margin-bottom:$layout-spacing--double;
+}
+
+// Margin top
+.u-spacing-top,
+%u-spacing-top {
+    margin-top:$layout-spacing;
+}
+.u-spacing-top--half,
+%u-spacing-top--half {
+    margin-top:$layout-spacing--half;
+}
+.u-spacing-top--double,
+%u-spacing-top--double {
+    margin-top:$layout-spacing--double;
 }
 
 

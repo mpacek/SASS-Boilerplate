@@ -6,17 +6,35 @@
  * Copyright 2014 Michal Pacek
  * Licensed under the Apache License, Version 2.0.
  */
-.l-container, .l-container-fluid {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.cf:after,
+.u-clearfix:after,
 .l-container:after,
 .l-container-fluid:after {
   content: "";
   display: table;
   clear: both; }
+
+.l-container, .l-container-fluid {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.u-spacing {
+  margin-bottom: 20px; }
+
+.u-spacing--half {
+  margin-bottom: 10px; }
+
+.u-spacing--double {
+  margin-bottom: 40px; }
+
+.u-spacing-top {
+  margin-top: 20px; }
+
+.u-spacing-top--half {
+  margin-top: 10px; }
+
+.u-spacing-top--double {
+  margin-top: 40px; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {

@@ -5,7 +5,7 @@
 // Container
 .l-container {
 	width:$layout-width; margin-left:auto; margin-right:auto; padding:0 $grid-gutter;
-	@extend %cf;
+	@extend %u-clearfix;
 	@extend %u-box-sizing--border;
 	
 	@if $use-responsive  == true {
@@ -23,7 +23,7 @@
 }
 .l-container-fluid {
 	width:100%; margin-left:0; margin-right:0; padding:0 $grid-gutter--half;
-	@extend %cf;
+	@extend %u-clearfix;
 	@extend %u-box-sizing--border;
 }
 
@@ -34,7 +34,7 @@
 	.l-row {
 		margin-left:- $grid-gutter--half; margin-right:- $grid-gutter--half; padding:0;
 		display:block;
-		@extend %cf;
+		@extend %u-clearfix;
 		@extend %u-box-sizing--border;
 	}
 	.l-col {
